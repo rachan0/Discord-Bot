@@ -5,8 +5,8 @@ import json
 from discord.ext import commands
 import os
 import asyncio
-import logging
 
+<<<<<<< HEAD
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,  # Set to DEBUG for more detailed logs
@@ -51,6 +51,14 @@ try:
 except ValueError:
     logging.error("Guild ID and Welcome Channel ID must be integers.")
     exit(1)
+=======
+# Load your token from token.json
+with open('token.json', 'r') as f:
+    YOUR_TOKEN = json.load(f)['token']
+
+# Replace with your actual Guild ID
+GUILD_ID = 934311718237134879  # Replace with your actual Guild ID
+>>>>>>> parent of eb4c30c (better organisation)
 
 class MyBot(commands.Bot):
     def __init__(self):
@@ -61,9 +69,12 @@ class MyBot(commands.Bot):
 
         # Initialize the Bot with the specified command prefix and intents
         super().__init__(command_prefix="/", intents=intents)
+<<<<<<< HEAD
 
         # Assign the loaded configuration to the bot instance for easy access in Cogs
         self.config = config
+=======
+>>>>>>> parent of eb4c30c (better organisation)
 
     async def setup_hook(self):
         # Load all Cogs/extensions
@@ -71,11 +82,16 @@ class MyBot(commands.Bot):
 
         # Sync commands to the specified guild (for faster command availability)
         guild = discord.Object(id=GUILD_ID)
+<<<<<<< HEAD
         try:
             synced_commands = await self.tree.sync(guild=guild)
             logging.info(f"Synced {len(synced_commands)} commands to guild ID {GUILD_ID}.")
         except Exception as e:
             logging.error(f"Failed to sync commands to guild ID {GUILD_ID}: {e}")
+=======
+        await self.tree.sync(guild=guild)
+        print(f'Synced commands to guild {GUILD_ID}')
+>>>>>>> parent of eb4c30c (better organisation)
 
     async def load_extensions(self):
         """
@@ -83,18 +99,27 @@ class MyBot(commands.Bot):
         """
         for folder in ['commands', 'events']:
             cog_directory = f'cogs/{folder}'
+<<<<<<< HEAD
             if not os.path.isdir(cog_directory):
                 logging.warning(f"Cog directory '{cog_directory}' does not exist. Skipping.")
                 continue
 
+=======
+>>>>>>> parent of eb4c30c (better organisation)
             for filename in os.listdir(cog_directory):
                 if filename.endswith('.py') and not filename.startswith('__'):
                     extension = f'cogs.{folder}.{filename[:-3]}'
                     try:
                         await self.load_extension(extension)
+<<<<<<< HEAD
                         logging.info(f"Loaded extension: {extension}")
                     except Exception as e:
                         logging.error(f"Failed to load extension '{extension}': {e}")
+=======
+                        print(f'Loaded extension: {extension}')
+                    except Exception as e:
+                        print(f'Failed to load extension {extension}: {e}')
+>>>>>>> parent of eb4c30c (better organisation)
 
 # Initialize the bot
 bot = MyBot()
@@ -105,6 +130,7 @@ async def main():
         await bot.start(YOUR_TOKEN)
 
 # Execute the bot
+<<<<<<< HEAD
 if __name__ == "__main__":
     try:
         asyncio.run(main())
@@ -112,3 +138,6 @@ if __name__ == "__main__":
         logging.info("Bot has been manually stopped.")
     except Exception as e:
         logging.critical(f"An unexpected error occurred: {e}")
+=======
+asyncio.run(main())
+>>>>>>> parent of eb4c30c (better organisation)

@@ -4,24 +4,16 @@ import discord
 from discord import app_commands
 from discord.ext import commands
 import random
-import logging
+
+# Replace with your actual Guild ID
+GUILD_ID = 934311718237134879  # Replace with your actual Guild ID
 
 class RPS(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
         self.choices = ["rock", "paper", "scissors"]
-        logging.info("RPS Cog initialized.")
 
-    @commands.Cog.listener()
-    async def on_ready(self):
-        # Register the /rps command
-        guild = discord.Object(id=int(self.bot.config['guild_id']))
-        try:
-            await self.bot.tree.sync(guild=guild)
-            logging.info(f"/rps command synced to guild {self.bot.config['guild_id']}")
-        except Exception as e:
-            logging.error(f"Failed to sync /rps command: {e}")
-
+    @app_commands.guilds(GUILD_ID)
     @app_commands.command(
         name="rps",
         description="Let's Play Rock Paper Scissors"
@@ -59,17 +51,13 @@ class RPS(commands.Cog):
         embed.set_footer(text=f"Played by {interaction.user}", icon_url=interaction.user.display_avatar.url if interaction.user.display_avatar else None)
 
         await interaction.response.send_message(embed=embed)
-        logging.info(f"/rps command used by {interaction.user}: {user_choice} vs {bot_choice} - {result}")
 
     @play_rps.error
     async def play_rps_error(self, interaction: discord.Interaction, error):
         if isinstance(error, app_commands.errors.CommandInvokeError):
             await interaction.response.send_message("An error occurred while processing your command.", ephemeral=True)
-            logging.error(f"Error in /rps command: {error}")
         else:
             await interaction.response.send_message(f"An unexpected error occurred: {error}", ephemeral=True)
-            logging.error(f"Unexpected error in /rps command: {error}")
 
 async def setup(bot: commands.Bot):
     await bot.add_cog(RPS(bot))
-    logging.info("RPS Cog has been added to the bot.")
