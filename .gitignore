@@ -3,3 +3,5 @@ token.json
 cogs/__pycache__
 cogs/commands/__pycache__
 cogs/events/__pycache__
+bot.log
+.env

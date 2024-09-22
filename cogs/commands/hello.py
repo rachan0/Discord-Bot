@@ -19,12 +19,5 @@ class Hello(commands.Cog):
     async def say_hello(self, interaction: discord.Interaction):
         await interaction.response.send_message("Hi there!")
 
-    @say_hello.error
-    async def say_hello_error(self, interaction: discord.Interaction, error):
-        if isinstance(error, app_commands.errors.CommandInvokeError):
-            await interaction.response.send_message("An error occurred while processing your command.", ephemeral=True)
-        else:
-            await interaction.response.send_message(f"An unexpected error occurred: {error}", ephemeral=True)
-
 async def setup(bot: commands.Bot):
     await bot.add_cog(Hello(bot))

@@ -1,17 +1,427 @@
-2024-09-22 19:59:42,353:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
-2024-09-22 19:59:42,354:INFO:discord.client: logging in using static token
-2024-09-22 19:59:43,260:INFO:root: Hello Cog initialized.
-2024-09-22 19:59:43,261:INFO:root: Hello Cog has been added to the bot.
-2024-09-22 19:59:43,261:INFO:root: Loaded extension: cogs.commands.hello
-2024-09-22 19:59:43,261:INFO:root: Loaded extension: cogs.commands.ping
-2024-09-22 19:59:43,263:INFO:root: RPS Cog initialized.
-2024-09-22 19:59:43,263:INFO:root: RPS Cog has been added to the bot.
-2024-09-22 19:59:43,263:INFO:root: Loaded extension: cogs.commands.rps
-2024-09-22 19:59:43,264:INFO:root: GeneralEvents Cog initialized.
-2024-09-22 19:59:43,265:INFO:root: GeneralEvents Cog has been added to the bot.
-2024-09-22 19:59:43,266:INFO:root: Loaded extension: cogs.events.general_events
-2024-09-22 19:59:43,277:ERROR:root: Failed to load extension 'cogs.events.member_events': Extension 'cogs.events.member_events' has no 'setup' function.
-2024-09-22 19:59:43,792:INFO:root: Synced 1 commands to guild ID 934311718237134879.
-2024-09-22 19:59:44,851:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 26c4f5dbebd90382b7e9658dd363ccad).
-2024-09-22 19:59:46,876:INFO:root: Bot is ready. Logged in as SHADOW.#7995!
-2024-09-22 20:00:22,177:INFO:root: Bot has been manually stopped.
+2024-09-22 22:00:12,641:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-09-22 22:00:41,928:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-09-22 22:00:41,929:INFO:discord.client: logging in using static token
+2024-09-22 22:01:11,314:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-09-22 22:01:11,316:INFO:discord.client: logging in using static token
+2024-09-22 22:01:44,305:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: ea6374d914fc20e7656c453ddde7a8e8).
+2024-09-22 22:02:58,509:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-09-22 22:02:58,511:INFO:discord.client: logging in using static token
+2024-09-22 22:04:11,444:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-09-22 22:04:11,446:INFO:discord.client: logging in using static token
+2024-09-22 22:04:13,523:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 2bdf20b157fc3d74045692562c15c46c).
+2024-09-22 22:05:57,101:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-09-22 22:05:57,103:INFO:discord.client: logging in using static token
+2024-09-22 22:05:59,347:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 0063f3fd7e9396e24fbbc7220ee771b2).
+2024-09-22 22:17:37,878:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-09-22 22:17:37,880:INFO:discord.client: logging in using static token
+2024-09-22 22:17:40,054:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 4c324865f01536f79c5c2ba19a305f87).
+2024-09-22 22:18:30,479:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-09-22 22:18:30,480:INFO:discord.client: logging in using static token
+2024-09-22 22:18:36,199:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: ae4826d6f623ccb0be660398ab9cb5f2).
+2024-09-22 22:26:21,501:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-09-22 22:26:21,502:INFO:discord.client: logging in using static token
+2024-09-22 22:26:24,293:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 345a38618ea423fd7e10c495fd6605ef).
+2024-09-22 22:35:00,946:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-09-22 22:35:00,948:INFO:discord.client: logging in using static token
+2024-09-22 22:35:03,701:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: fa452668776b77d7409573536069138d).
+2024-09-22 22:37:30,391:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2024-09-22 22:37:30,392:INFO:discord.client: logging in using static token
+2024-09-22 22:37:33,372:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 70b015a1bb305fea2b79d43fc1854efc).
+2024-09-22 22:38:05,993:INFO:discord.client: logging in using static token
+2024-09-22 22:38:08,917:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 5276f66438ba625449558169c599810f).
+2024-09-22 22:51:23,169:INFO:discord.client: logging in using static token
+2024-09-22 22:51:25,973:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 2da788b5cbafb5ce3b0b29914239506b).
+2024-09-22 22:51:50,375:INFO:discord.client: logging in using static token
+2024-09-22 22:51:51,300:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2024-09-22 22:51:51,804:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-us-east1-d-tghb",{"micros":203105,"calls":["id_created",{"micros":778,"calls":[]},"session_lookup_time",{"micros":2568,"calls":[]},"session_lookup_finished",{"micros":26,"calls":[]},"discord-sessions-prd-1-120",{"micros":199477,"calls":["start_session",{"micros":161423,"calls":["discord-api-rpc-5bff78fbcb-4xbnk",{"micros":145816,"calls":["get_user",{"micros":35512},"get_guilds",{"micros":5302},"send_scheduled_deletion_message",{"micros":6},"guild_join_requests",{"micros":1},"authorized_ip_coro",{"micros":7}]}]},"starting_guild_connect",{"micros":94,"calls":[]},"presence_started",{"micros":4352,"calls":[]},"guilds_started",{"micros":156,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":33423,"calls":[]},"connect_finished",{"micros":33428,"calls":[]},"build_ready",{"micros":19,"calls":[]},"clean_ready",{"micros":0,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}] (Session ID: e51c91bbd9f80bbacb85981526ca153b).
+2024-09-22 22:53:21,842:INFO:discord.client: logging in using static token
+2024-09-22 22:53:24,510:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 41e18bab652c13a1eb61483db2608705).
+2024-09-22 23:15:54,302:INFO:discord.client: logging in using static token
+2024-09-22 23:15:57,281:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 1f71bd66e53e672f8a6b87d0559c8720).
+2024-09-22 23:16:21,213:INFO:discord.voice_state: Connecting to voice...
+2024-09-22 23:16:21,222:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2024-09-22 23:16:21,755:INFO:discord.voice_state: Voice handshake complete. Endpoint found: india10005.discord.media
+2024-09-22 23:16:21,971:INFO:discord.voice_state: Voice connection complete.
+2024-09-22 23:17:41,004:INFO:discord.voice_state: The voice handshake is being terminated for Channel ID 1118576876928126979 (Guild ID 934311718237134879)
+2024-09-22 23:25:27,239:INFO:discord.client: logging in using static token
+2024-09-22 23:25:30,313:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: cdf772ed3380bafea8d8dbb690868054).
+2024-09-22 23:25:48,099:INFO:discord.voice_state: Connecting to voice...
+2024-09-22 23:25:48,099:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2024-09-22 23:25:48,635:INFO:discord.voice_state: Voice handshake complete. Endpoint found: india10005.discord.media
+2024-09-22 23:25:48,854:INFO:discord.voice_state: Voice connection complete.
+2024-09-22 23:27:07,862:INFO:discord.client: logging in using static token
+2024-09-22 23:27:10,791:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: ceb8aa4880dafb7c515a24b65e334a98).
+2024-09-22 23:27:17,739:INFO:discord.voice_state: Connecting to voice...
+2024-09-22 23:27:17,739:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2024-09-22 23:27:18,286:INFO:discord.voice_state: Voice handshake complete. Endpoint found: india10005.discord.media
+2024-09-22 23:27:18,479:INFO:discord.voice_state: Voice connection complete.
+2024-09-22 23:29:05,016:INFO:discord.voice_state: Disconnected from voice by force... potentially reconnecting.
+2024-09-22 23:29:05,017:INFO:discord.voice_state: The voice handshake is being terminated for Channel ID 1118576876928126979 (Guild ID 934311718237134879)
+2024-09-22 23:29:05,019:INFO:discord.voice_state: Reconnect was unsuccessful, disconnecting from voice normally...
+2024-09-22 23:29:05,027:ERROR:discord.player: Calling the after function failed.
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\player.py", line 784, in _call_after
+    self.after(error)
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 87, in <lambda>
+    voice_client.play(source, after=lambda e: self.play_next(interaction.guild.id, e))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 104, in play_next
+    loop = asyncio.get_event_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 702, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'audio-player:0x1df4387bbc0'.
+2024-09-22 23:29:05,048:INFO:discord.player: ffmpeg process 24732 has not terminated. Waiting to terminate...
+2024-09-22 23:29:06,797:INFO:discord.player: ffmpeg process 24732 should have terminated with a return code of 1.
+2024-09-22 23:29:13,474:INFO:discord.client: logging in using static token
+2024-09-22 23:29:16,450:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 8fb3603df0051e34308f31e1262d6b27).
+2024-09-22 23:29:21,197:INFO:discord.voice_state: Connecting to voice...
+2024-09-22 23:29:21,198:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2024-09-22 23:29:21,759:INFO:discord.voice_state: Voice handshake complete. Endpoint found: india10005.discord.media
+2024-09-22 23:29:21,971:INFO:discord.voice_state: Voice connection complete.
+2024-09-22 23:30:54,462:ERROR:discord.app_commands.tree: Ignoring exception in command 'queue'
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 148, in queue
+    @app_commands.command(
+     ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 2060, in decorator
+    return Command(
+           ^^^^^^^^
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 687, in __init__
+    self._params: Dict[str, CommandParameter] = _extract_parameters_from_callback(callback, callback.__globals__)
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 383, in _extract_parameters_from_callback
+    param = annotation_to_parameter(resolved, parameter)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\transformers.py", line 833, in annotation_to_parameter
+    (inner, default, validate_default) = get_supported_annotation(annotation)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\transformers.py", line 792, in get_supported_annotation
+    raise TypeError(f'unsupported type annotation {annotation!r}')
+TypeError: unsupported type annotation <class 'discord.interactions.Interaction'>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 872, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'queue' raised an exception: TypeError: unsupported type annotation <class 'discord.interactions.Interaction'>
+2024-09-22 23:31:03,701:ERROR:discord.app_commands.tree: Ignoring exception in command 'queue'
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 148, in queue
+    @app_commands.command(
+     ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 2060, in decorator
+    return Command(
+           ^^^^^^^^
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 687, in __init__
+    self._params: Dict[str, CommandParameter] = _extract_parameters_from_callback(callback, callback.__globals__)
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 383, in _extract_parameters_from_callback
+    param = annotation_to_parameter(resolved, parameter)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\transformers.py", line 833, in annotation_to_parameter
+    (inner, default, validate_default) = get_supported_annotation(annotation)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\transformers.py", line 792, in get_supported_annotation
+    raise TypeError(f'unsupported type annotation {annotation!r}')
+TypeError: unsupported type annotation <class 'discord.interactions.Interaction'>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 872, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'queue' raised an exception: TypeError: unsupported type annotation <class 'discord.interactions.Interaction'>
+2024-09-22 23:33:16,066:INFO:discord.voice_state: The voice handshake is being terminated for Channel ID 1118576876928126979 (Guild ID 934311718237134879)
+2024-09-22 23:33:16,068:ERROR:discord.player: Calling the after function failed.
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\player.py", line 784, in _call_after
+    self.after(error)
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 87, in <lambda>
+    voice_client.play(source, after=lambda e: self.play_next(interaction.guild.id, e))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 101, in play_next
+    loop = asyncio.get_event_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 702, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'audio-player:0x219797d9940'.
+2024-09-22 23:33:16,080:INFO:discord.player: ffmpeg process 11648 has not terminated. Waiting to terminate...
+2024-09-22 23:33:16,827:INFO:discord.player: ffmpeg process 11648 should have terminated with a return code of 1.
+2024-09-22 23:33:22,422:INFO:discord.client: logging in using static token
+2024-09-22 23:33:25,299:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 5e0cf298696cde77f9255c054c3c96fd).
+2024-09-22 23:33:37,864:INFO:discord.voice_state: Connecting to voice...
+2024-09-22 23:33:37,865:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2024-09-22 23:33:38,398:INFO:discord.voice_state: Voice handshake complete. Endpoint found: india10005.discord.media
+2024-09-22 23:33:38,642:INFO:discord.voice_state: Voice connection complete.
+2024-09-22 23:34:58,721:INFO:discord.voice_state: The voice handshake is being terminated for Channel ID 1118576876928126979 (Guild ID 934311718237134879)
+2024-09-22 23:34:58,724:ERROR:discord.player: Calling the after function failed.
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\player.py", line 784, in _call_after
+    self.after(error)
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 87, in <lambda>
+    voice_client.play(source, after=lambda e: self.play_next(interaction.guild.id, e))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 104, in play_next
+    loop = asyncio.get_event_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 702, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'audio-player:0x1c8b1ea84d0'.
+2024-09-22 23:34:58,737:INFO:discord.player: ffmpeg process 14216 has not terminated. Waiting to terminate...
+2024-09-22 23:34:59,140:INFO:discord.player: ffmpeg process 14216 should have terminated with a return code of 1.
+2024-09-22 23:35:02,641:INFO:discord.client: logging in using static token
+2024-09-22 23:35:05,475:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 9d8f76db9d8bdb7af15256c5fd2e635f).
+2024-09-22 23:35:10,520:INFO:discord.voice_state: Connecting to voice...
+2024-09-22 23:35:10,521:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2024-09-22 23:35:11,049:INFO:discord.voice_state: Voice handshake complete. Endpoint found: india10005.discord.media
+2024-09-22 23:35:11,242:INFO:discord.voice_state: Voice connection complete.
+2024-09-22 23:35:17,596:INFO:discord.voice_state: Disconnected from voice by force... potentially reconnecting.
+2024-09-22 23:35:17,635:INFO:discord.voice_state: The voice handshake is being terminated for Channel ID 1118576876928126979 (Guild ID 934311718237134879)
+2024-09-22 23:35:17,636:INFO:discord.voice_state: Reconnect was unsuccessful, disconnecting from voice normally...
+2024-09-22 23:35:17,640:ERROR:discord.player: Calling the after function failed.
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\player.py", line 784, in _call_after
+    self.after(error)
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 87, in <lambda>
+    voice_client.play(source, after=lambda e: self.play_next(interaction.guild.id, e))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 104, in play_next
+    loop = asyncio.get_event_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 702, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'audio-player:0x1c4e442af90'.
+2024-09-22 23:35:17,646:INFO:discord.player: ffmpeg process 17004 has not terminated. Waiting to terminate...
+2024-09-22 23:35:18,391:INFO:discord.player: ffmpeg process 17004 should have terminated with a return code of 1.
+2024-09-22 23:36:07,525:INFO:discord.client: logging in using static token
+2024-09-22 23:36:10,192:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: a359f86654a89c34ca17d4a8304ed1eb).
+2024-09-22 23:36:14,437:INFO:discord.voice_state: Connecting to voice...
+2024-09-22 23:36:14,438:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2024-09-22 23:36:14,966:INFO:discord.voice_state: Voice handshake complete. Endpoint found: india10005.discord.media
+2024-09-22 23:36:15,187:INFO:discord.voice_state: Voice connection complete.
+2024-09-22 23:36:40,549:INFO:discord.voice_state: Disconnected from voice by force... potentially reconnecting.
+2024-09-22 23:36:40,577:INFO:discord.voice_state: The voice handshake is being terminated for Channel ID 1118576876928126979 (Guild ID 934311718237134879)
+2024-09-22 23:36:40,581:INFO:discord.voice_state: Reconnect was unsuccessful, disconnecting from voice normally...
+2024-09-22 23:36:40,596:ERROR:discord.player: Calling the after function failed.
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\player.py", line 784, in _call_after
+    self.after(error)
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 87, in <lambda>
+    voice_client.play(source, after=lambda e: self.play_next(interaction.guild.id, e))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 104, in play_next
+    loop = asyncio.get_event_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 702, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'audio-player:0x245ca6038f0'.
+2024-09-22 23:36:40,601:INFO:discord.player: ffmpeg process 25536 has not terminated. Waiting to terminate...
+2024-09-22 23:36:41,225:INFO:discord.player: ffmpeg process 25536 should have terminated with a return code of 1.
+2024-09-22 23:40:22,460:INFO:discord.client: logging in using static token
+2024-09-22 23:40:25,211:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: dceb79bda516f28583c31782caa563fe).
+2024-09-22 23:40:39,714:INFO:discord.voice_state: Connecting to voice...
+2024-09-22 23:40:39,715:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2024-09-22 23:40:40,257:INFO:discord.voice_state: Voice handshake complete. Endpoint found: india10005.discord.media
+2024-09-22 23:40:40,506:INFO:discord.voice_state: Voice connection complete.
+2024-09-22 23:40:44,911:INFO:discord.voice_state: Disconnected from voice by force... potentially reconnecting.
+2024-09-22 23:40:44,933:INFO:discord.voice_state: The voice handshake is being terminated for Channel ID 1118576876928126979 (Guild ID 934311718237134879)
+2024-09-22 23:40:44,934:INFO:discord.voice_state: Reconnect was unsuccessful, disconnecting from voice normally...
+2024-09-22 23:40:44,951:ERROR:discord.player: Calling the after function failed.
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\player.py", line 784, in _call_after
+    self.after(error)
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 87, in <lambda>
+    voice_client.play(source, after=lambda e: self.play_next(interaction.guild.id, e))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 104, in play_next
+    loop = asyncio.get_event_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 702, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'audio-player:0x21ab86a82f0'.
+2024-09-22 23:40:44,957:INFO:discord.player: ffmpeg process 23904 has not terminated. Waiting to terminate...
+2024-09-22 23:40:45,831:INFO:discord.player: ffmpeg process 23904 should have terminated with a return code of 1.
+2024-09-22 23:41:13,747:INFO:discord.client: logging in using static token
+2024-09-22 23:41:16,603:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: c2d88f9ed1b2b4fdc83bfde7c5af9d9d).
+2024-09-22 23:41:46,985:INFO:discord.client: logging in using static token
+2024-09-22 23:41:50,029:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 43018aefe55bb48bfcf705f2b5560662).
+2024-09-22 23:41:56,708:INFO:discord.voice_state: Connecting to voice...
+2024-09-22 23:41:56,708:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2024-09-22 23:41:57,242:INFO:discord.voice_state: Voice handshake complete. Endpoint found: india10005.discord.media
+2024-09-22 23:41:57,441:INFO:discord.voice_state: Voice connection complete.
+2024-09-22 23:44:39,266:ERROR:discord.player: Calling the after function failed.
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\player.py", line 784, in _call_after
+    self.after(error)
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 87, in <lambda>
+    voice_client.play(source, after=lambda e: self.play_next(interaction.guild.id, e))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 101, in play_next
+    loop = asyncio.get_event_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 702, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'audio-player:0x20a099fbe60'.
+2024-09-22 23:44:39,270:INFO:discord.player: ffmpeg process 24660 successfully terminated with return code of 0.
+2024-09-22 23:46:07,087:ERROR:discord.player: Calling the after function failed.
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\player.py", line 784, in _call_after
+    self.after(error)
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 87, in <lambda>
+    voice_client.play(source, after=lambda e: self.play_next(interaction.guild.id, e))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 101, in play_next
+    loop = asyncio.get_event_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 702, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'audio-player:0x20a092e0440'.
+2024-09-22 23:46:07,102:INFO:discord.player: ffmpeg process 16964 has not terminated. Waiting to terminate...
+2024-09-22 23:46:08,067:INFO:discord.player: ffmpeg process 16964 should have terminated with a return code of 1.
+2024-09-22 23:47:06,217:ERROR:discord.player: Calling the after function failed.
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\player.py", line 784, in _call_after
+    self.after(error)
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 87, in <lambda>
+    voice_client.play(source, after=lambda e: self.play_next(interaction.guild.id, e))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 101, in play_next
+    loop = asyncio.get_event_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 702, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'audio-player:0x20a07720680'.
+2024-09-22 23:47:06,231:INFO:discord.player: ffmpeg process 21780 has not terminated. Waiting to terminate...
+2024-09-22 23:47:06,685:INFO:discord.player: ffmpeg process 21780 should have terminated with a return code of 1.
+2024-09-22 23:47:53,988:ERROR:discord.player: Calling the after function failed.
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\player.py", line 784, in _call_after
+    self.after(error)
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 87, in <lambda>
+    voice_client.play(source, after=lambda e: self.play_next(interaction.guild.id, e))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 104, in play_next
+    loop = asyncio.get_event_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 702, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'audio-player:0x20a0922a900'.
+2024-09-22 23:47:53,991:INFO:discord.player: ffmpeg process 8432 has not terminated. Waiting to terminate...
+2024-09-22 23:47:54,468:INFO:discord.player: ffmpeg process 8432 should have terminated with a return code of 1.
+2024-09-22 23:48:41,304:INFO:discord.voice_state: The voice handshake is being terminated for Channel ID 1118576876928126979 (Guild ID 934311718237134879)
+2024-09-22 23:48:41,314:ERROR:discord.player: Calling the after function failed.
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\player.py", line 784, in _call_after
+    self.after(error)
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 87, in <lambda>
+    voice_client.play(source, after=lambda e: self.play_next(interaction.guild.id, e))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 104, in play_next
+    loop = asyncio.get_event_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 702, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'audio-player:0x20a074c9340'.
+2024-09-22 23:48:41,325:INFO:discord.player: ffmpeg process 20696 has not terminated. Waiting to terminate...
+2024-09-22 23:48:45,304:INFO:discord.client: logging in using static token
+2024-09-22 23:48:48,338:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 28cbbb63f0c5e459c3173471c987aa7b).
+2024-09-22 23:48:54,488:INFO:discord.voice_state: Connecting to voice...
+2024-09-22 23:48:54,488:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2024-09-22 23:48:55,066:INFO:discord.voice_state: Voice handshake complete. Endpoint found: india10005.discord.media
+2024-09-22 23:48:55,396:INFO:discord.voice_state: Voice connection complete.
+2024-09-22 23:49:05,674:INFO:discord.voice_state: The voice handshake is being terminated for Channel ID 1118576876928126979 (Guild ID 934311718237134879)
+2024-09-22 23:49:05,695:ERROR:discord.player: Calling the after function failed.
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\player.py", line 784, in _call_after
+    self.after(error)
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 87, in <lambda>
+    voice_client.play(source, after=lambda e: self.play_next(interaction.guild.id, e))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 104, in play_next
+    loop = asyncio.get_event_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 702, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'audio-player:0x22061bfc8c0'.
+2024-09-22 23:49:05,699:INFO:discord.player: ffmpeg process 16832 has not terminated. Waiting to terminate...
+2024-09-22 23:49:06,762:INFO:discord.player: ffmpeg process 16832 should have terminated with a return code of 1.
+2024-09-22 23:49:21,878:INFO:discord.voice_state: Connecting to voice...
+2024-09-22 23:49:21,879:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2024-09-22 23:49:22,408:INFO:discord.voice_state: Voice handshake complete. Endpoint found: india10005.discord.media
+2024-09-22 23:49:22,621:INFO:discord.voice_state: Voice connection complete.
+2024-09-22 23:52:31,027:ERROR:discord.player: Calling the after function failed.
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\player.py", line 784, in _call_after
+    self.after(error)
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 87, in <lambda>
+    await interaction.followup.send(f"🎶 Now playing: **{source.title}**")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 104, in play_next
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 702, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'audio-player:0x220636af260'.
+2024-09-22 23:52:31,041:INFO:discord.player: ffmpeg process 19720 successfully terminated with return code of 0.
+2024-09-22 23:53:59,899:INFO:discord.voice_state: The voice handshake is being terminated for Channel ID 1118576876928126979 (Guild ID 934311718237134879)
+2024-09-22 23:54:03,486:INFO:discord.client: logging in using static token
+2024-09-22 23:54:06,199:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: a2eed3b5841722e4a0bdf9bef339a085).
+2024-09-22 23:54:09,767:INFO:discord.voice_state: Connecting to voice...
+2024-09-22 23:54:09,768:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2024-09-22 23:54:10,329:INFO:discord.voice_state: Voice handshake complete. Endpoint found: india10005.discord.media
+2024-09-22 23:54:10,551:INFO:discord.voice_state: Voice connection complete.
+2024-09-22 23:54:33,028:ERROR:discord.player: Calling the after function failed.
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\player.py", line 784, in _call_after
+    self.after(error)
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 88, in <lambda>
+    voice_client.play(source, after=lambda e: self.play_next(interaction.guild.id, e))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 196, in play_next
+    loop = asyncio.get_event_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 702, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'audio-player:0x21fb9134ce0'.
+2024-09-22 23:54:33,031:INFO:discord.player: ffmpeg process 10668 has not terminated. Waiting to terminate...
+2024-09-22 23:54:33,912:INFO:discord.player: ffmpeg process 10668 should have terminated with a return code of 1.
+2024-09-22 23:57:31,286:INFO:discord.voice_state: The voice handshake is being terminated for Channel ID 1118576876928126979 (Guild ID 934311718237134879)
+2024-09-22 23:57:31,294:ERROR:discord.player: Calling the after function failed.
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\player.py", line 784, in _call_after
+    self.after(error)
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 88, in <lambda>
+    voice_client.play(source, after=lambda e: self.play_next(interaction.guild.id, e))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 196, in play_next
+    loop = asyncio.get_event_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 702, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'audio-player:0x21fb7cdb0b0'.
+2024-09-22 23:57:31,309:INFO:discord.player: ffmpeg process 20380 has not terminated. Waiting to terminate...
+2024-09-22 23:57:35,657:INFO:discord.client: logging in using static token
+2024-09-22 23:57:38,657:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: fa07a225065cdf65b2fc3591684ff78c).
+2024-09-22 23:57:59,509:INFO:discord.voice_state: Connecting to voice...
+2024-09-22 23:57:59,509:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2024-09-22 23:58:00,034:INFO:discord.voice_state: Voice handshake complete. Endpoint found: india10005.discord.media
+2024-09-22 23:58:00,210:INFO:discord.voice_state: Voice connection complete.
+2024-09-22 23:58:53,733:INFO:discord.voice_state: Disconnected from voice by force... potentially reconnecting.
+2024-09-22 23:58:53,770:INFO:discord.voice_state: The voice handshake is being terminated for Channel ID 1118576876928126979 (Guild ID 934311718237134879)
+2024-09-22 23:58:53,773:INFO:discord.voice_state: Reconnect was unsuccessful, disconnecting from voice normally...

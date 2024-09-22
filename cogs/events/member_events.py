@@ -3,6 +3,7 @@
 import discord
 from discord.ext import commands
 import logging
+from datetime import datetime
 
 class MemberEvents(commands.Cog):
     def __init__(self, bot: commands.Bot):
@@ -58,3 +59,4 @@ class MemberEvents(commands.Cog):
 async def setup(bot: commands.Bot):
     await bot.add_cog(MemberEvents(bot))
     logging.info("MemberEvents Cog has been added to the bot.")
+    

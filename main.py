@@ -1,41 +1,28 @@
 # main.py
 
 import discord
-import json
-from discord.ext import commands
 import os
 import asyncio
 import logging
+from discord.ext import commands
+from dotenv import load_dotenv
+import logger  # Ensure logger.py is properly set up
 
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s:%(levelname)s:%(name)s: %(message)s'
-)
+# Load environment variables from .env file
+load_dotenv()
 
-# Load configuration from token.json
-CONFIG_PATH = 'token.json'
-
-if not os.path.exists(CONFIG_PATH):
-    logging.error(f"Configuration file '{CONFIG_PATH}' not found.")
-    exit(1)
-
-with open(CONFIG_PATH, 'r') as f:
-    try:
-        config = json.load(f)
-    except json.JSONDecodeError as e:
-        logging.error(f"Error decoding JSON from '{CONFIG_PATH}': {e}")
-        exit(1)
+# Setup logging
+logger.setup_logging()
 
 # Extract configuration variables
-YOUR_TOKEN = config.get('token')
-GUILD_ID = config.get('guild_id')
-WELCOME_CHANNEL_ID = config.get('welcome_channel_id')
-DEFAULT_ROLE_NAME = config.get('default_role_name')
+YOUR_TOKEN = os.getenv('DISCORD_TOKEN')
+GUILD_ID = os.getenv('GUILD_ID')
+WELCOME_CHANNEL_ID = os.getenv('WELCOME_CHANNEL_ID')
+DEFAULT_ROLE_NAME = os.getenv('DEFAULT_ROLE_NAME')
 
 # Validate essential configurations
 if not all([YOUR_TOKEN, GUILD_ID, WELCOME_CHANNEL_ID, DEFAULT_ROLE_NAME]):
-    logging.error("Missing one or more required configurations in 'token.json'.")
+    logging.error("Missing one or more required environment variables.")
     exit(1)
 
 # Convert IDs to integers
@@ -51,17 +38,22 @@ class Client(commands.Bot):
         intents = discord.Intents.default()
         intents.message_content = True  # Enable access to message content
         intents.members = True  # Enable member events
+        intents.voice_states = True  # Enable voice state events
         super().__init__(command_prefix="/", intents=intents)
-        self.config = config  # Make config accessible to Cogs
+        self.config = {
+            "guild_id": GUILD_ID,
+            "welcome_channel_id": WELCOME_CHANNEL_ID,
+            "default_role_name": DEFAULT_ROLE_NAME
+        }  # Make config accessible to Cogs
 
     async def setup_hook(self):
         # Load all cogs
         await self.load_extensions()
         # Sync commands to the specified guild
-        guild = discord.Object(id=GUILD_ID)
+        guild = discord.Object(id=self.config['guild_id'])
         try:
             synced = await self.tree.sync(guild=guild)
-            logging.info(f'Synced {len(synced)} commands to guild {GUILD_ID}')
+            logging.info(f'Synced {len(synced)} commands to guild {self.config["guild_id"]}')
         except Exception as e:
             logging.error(f'Error syncing commands: {e}')
 
@@ -80,6 +72,7 @@ class Client(commands.Bot):
                         logging.info(f'Loaded extension: {extension}')
                     except Exception as e:
                         logging.error(f'Failed to load extension {extension}: {e}')
+
 
 # Initialize the bot
 client = Client()
