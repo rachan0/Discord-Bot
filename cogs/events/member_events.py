@@ -41,7 +41,7 @@ class MemberEvents(commands.Cog):
             print(f"Welcome channel with ID {welcome_channel_id} not found. Please verify the channel ID.")
 
         # Assign a default role to the new member
-        default_role_name = "Member "  # Replace with your default role name
+        default_role_name = "Member"  # Replace with your default role name
         default_role = discord.utils.get(member.guild.roles, name=default_role_name)
         
         if default_role is not None:
