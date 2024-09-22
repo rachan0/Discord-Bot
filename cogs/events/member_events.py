@@ -2,22 +2,23 @@
 
 import discord
 from discord.ext import commands
-
-# Replace with your actual Guild ID
-GUILD_ID = 934311718237134879  # Replace with your actual Guild ID
+import logging
 
 class MemberEvents(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
-        print("MemberEvents Cog initialized.")
+        logging.info("MemberEvents Cog initialized.")
 
     # Event: Member joins the guild
     @commands.Cog.listener()
     async def on_member_join(self, member: discord.Member):
-        print(f'New member joined: {member.name}#{member.discriminator} (ID: {member.id})')
+        logging.info(f'New member joined: {member.name}#{member.discriminator} (ID: {member.id})')
         
+        # Fetch configurations
+        welcome_channel_id = int(self.bot.config['welcome_channel_id'])
+        default_role_name = self.bot.config['default_role_name']
+
         # Define the channel where welcome messages will be sent
-        welcome_channel_id = 1287398700867649577  # Replace with your welcome channel ID
         channel = member.guild.get_channel(welcome_channel_id)
         
         if channel is not None:
@@ -32,29 +33,28 @@ class MemberEvents(commands.Cog):
             
             try:
                 await channel.send(embed=embed)
-                print(f'Sent welcome message to {member.name}')
+                logging.info(f'Sent welcome message to {member.name}')
             except discord.Forbidden:
-                print(f"Permission denied: Cannot send messages in the welcome channel (ID: {welcome_channel_id}).")
+                logging.error(f"Permission denied: Cannot send messages in the welcome channel (ID: {welcome_channel_id}).")
             except Exception as e:
-                print(f"Failed to send welcome message: {e}")
+                logging.error(f"Failed to send welcome message: {e}")
         else:
-            print(f"Welcome channel with ID {welcome_channel_id} not found. Please verify the channel ID.")
-
+            logging.error(f"Welcome channel with ID {welcome_channel_id} not found. Please verify the channel ID.")
+        
         # Assign a default role to the new member
-        default_role_name = "Member"  # Replace with your default role name
         default_role = discord.utils.get(member.guild.roles, name=default_role_name)
         
         if default_role is not None:
             try:
                 await member.add_roles(default_role)
-                print(f"Assigned role '{default_role_name}' to {member.name}.")
+                logging.info(f"Assigned role '{default_role_name}' to {member.name}.")
             except discord.Forbidden:
-                print(f"Permission denied: Cannot assign role '{default_role_name}' to {member.name}.")
+                logging.error(f"Permission denied: Cannot assign role '{default_role_name}' to {member.name}.")
             except Exception as e:
-                print(f"Failed to assign role '{default_role_name}' to {member.name}: {e}")
+                logging.error(f"Failed to assign role '{default_role_name}' to {member.name}: {e}")
         else:
-            print(f"Role '{default_role_name}' not found. Please create the role or update the role name in the Cog.")
+            logging.error(f"Role '{default_role_name}' not found. Please create the role or update the role name in the Cog.")
 
 async def setup(bot: commands.Bot):
     await bot.add_cog(MemberEvents(bot))
-    print("MemberEvents Cog has been added to the bot.")
+    logging.info("MemberEvents Cog has been added to the bot.")
