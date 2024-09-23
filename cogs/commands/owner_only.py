@@ -1,6 +1,6 @@
 # cogs/commands/owner_only.py
 
-import discord
+import discord 
 from discord.ext import commands
 import logging
 from cogs.utils.checks import is_bot_owner

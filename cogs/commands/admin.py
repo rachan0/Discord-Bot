@@ -8,6 +8,7 @@ class Admin(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
 
+    
     @commands.command(name='reload')
     @commands.is_owner()
     async def reload_cog(self, ctx, extension: str):

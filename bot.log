@@ -425,3 +425,821 @@ RuntimeError: There is no current event loop in thread 'audio-player:0x21fb7cdb0
 2024-09-22 23:58:53,733:INFO:discord.voice_state: Disconnected from voice by force... potentially reconnecting.
 2024-09-22 23:58:53,770:INFO:discord.voice_state: The voice handshake is being terminated for Channel ID 1118576876928126979 (Guild ID 934311718237134879)
 2024-09-22 23:58:53,773:INFO:discord.voice_state: Reconnect was unsuccessful, disconnecting from voice normally...
+2024-09-23 00:12:41,621:INFO:discord.client: logging in using static token
+2024-09-23 00:12:44,511:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 1f773dfd65ec223522b4a9b4c65ba421).
+2024-09-23 00:15:42,600:INFO:discord.client: logging in using static token
+2024-09-23 00:15:45,513:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 9ed9cf2186ffebaf518a8a154dcb79b0).
+2024-09-23 00:19:37,159:INFO:discord.client: logging in using static token
+2024-09-23 00:19:39,909:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: a9da532fb756e160a5cac4890964a31a).
+2024-09-23 00:20:33,503:INFO:discord.client: logging in using static token
+2024-09-23 00:20:36,469:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 1d88490b6f58b539985bb3c48ccb79b9).
+2024-09-23 00:21:27,782:INFO:discord.client: logging in using static token
+2024-09-23 00:21:30,831:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 007c2377c5e9cd882371c488e23eb624).
+2024-09-23 00:22:50,337:INFO:discord.voice_state: Connecting to voice...
+2024-09-23 00:22:50,338:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2024-09-23 00:22:50,884:INFO:discord.voice_state: Voice handshake complete. Endpoint found: india10042.discord.media
+2024-09-23 00:22:51,101:INFO:discord.voice_state: Voice connection complete.
+2024-09-23 00:25:44,914:ERROR:discord.player: Calling the after function failed.
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\player.py", line 784, in _call_after
+    self.after(error)
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 89, in <lambda>
+    voice_client.play(source, after=lambda e: self.play_next(interaction.guild.id, e))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 200, in play_next
+    loop = asyncio.get_event_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 702, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'audio-player:0x2c3c8099c40'.
+2024-09-23 00:25:44,919:INFO:discord.player: ffmpeg process 1800 successfully terminated with return code of 0.
+2024-09-23 00:28:37,582:ERROR:discord.player: Calling the after function failed.
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\player.py", line 784, in _call_after
+    self.after(error)
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 89, in <lambda>
+    voice_client.play(source, after=lambda e: self.play_next(interaction.guild.id, e))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 197, in play_next
+    loop = asyncio.get_event_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 702, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'audio-player:0x2c3c74ae0f0'.
+2024-09-23 00:28:37,585:INFO:discord.player: ffmpeg process 15244 successfully terminated with return code of 0.
+2024-09-23 00:45:38,541:INFO:discord.voice_state: The voice handshake is being terminated for Channel ID 1118576876928126979 (Guild ID 934311718237134879)
+2024-09-23 00:45:42,346:INFO:discord.client: logging in using static token
+2024-09-23 00:45:45,251:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: ddb4a192da13d6cf6c3c01a71cf0af49).
+2024-09-23 00:46:25,190:INFO:discord.voice_state: Connecting to voice...
+2024-09-23 00:46:25,190:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2024-09-23 00:46:25,730:INFO:discord.voice_state: Voice handshake complete. Endpoint found: india10042.discord.media
+2024-09-23 00:46:25,944:INFO:discord.voice_state: Voice connection complete.
+2024-09-23 00:48:51,928:ERROR:discord.player: Calling the after function failed.
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\player.py", line 784, in _call_after
+    self.after(error)
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 90, in <lambda>
+    voice_client.play(source, after=lambda e: self.play_next(interaction.guild.id, e))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 218, in play_next
+    loop = asyncio.get_event_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 702, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'audio-player:0x29a860c89b0'.
+2024-09-23 00:48:51,932:INFO:discord.player: ffmpeg process 12036 successfully terminated with return code of 0.
+2024-09-23 00:50:42,789:INFO:discord.voice_state: The voice handshake is being terminated for Channel ID 1118576876928126979 (Guild ID 934311718237134879)
+2024-09-23 00:50:55,638:INFO:discord.client: logging in using static token
+2024-09-23 00:50:58,703:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 2a05458e3ba259cf0c4e4e52f9b7594a).
+2024-09-23 00:52:44,802:INFO:discord.voice_state: Connecting to voice...
+2024-09-23 00:52:44,803:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2024-09-23 00:52:45,349:INFO:discord.voice_state: Voice handshake complete. Endpoint found: india10042.discord.media
+2024-09-23 00:52:45,570:INFO:discord.voice_state: Voice connection complete.
+2024-09-23 00:56:42,018:ERROR:discord.player: Calling the after function failed.
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\player.py", line 784, in _call_after
+    self.after(error)
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 90, in <lambda>
+    voice_client.play(source, after=lambda e: self.play_next(interaction.guild.id, e))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 222, in play_next
+    loop = asyncio.get_event_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 702, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'audio-player:0x20c465fcb90'.
+2024-09-23 00:56:42,022:INFO:discord.player: ffmpeg process 17400 successfully terminated with return code of 0.
+2024-09-23 01:01:56,961:INFO:discord.voice_state: The voice handshake is being terminated for Channel ID 1118576876928126979 (Guild ID 934311718237134879)
+2024-09-23 01:02:01,733:INFO:discord.client: logging in using static token
+2024-09-23 01:02:04,769:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 01648ad1d9afa2b667ec282d90ae82a9).
+2024-09-23 01:02:12,901:INFO:discord.voice_state: Connecting to voice...
+2024-09-23 01:02:12,902:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2024-09-23 01:02:13,556:INFO:discord.voice_state: Voice handshake complete. Endpoint found: india10042.discord.media
+2024-09-23 01:02:13,758:INFO:discord.voice_state: Voice connection complete.
+2024-09-23 01:02:42,213:ERROR:discord.player: Calling the after function failed.
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\player.py", line 784, in _call_after
+    self.after(error)
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 90, in <lambda>
+    voice_client.play(source, after=lambda e: self.play_next(interaction.guild.id, e, interaction.channel))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Music.play_next() takes 3 positional arguments but 4 were given
+2024-09-23 01:02:42,216:INFO:discord.player: ffmpeg process 16520 has not terminated. Waiting to terminate...
+2024-09-23 01:02:43,107:INFO:discord.player: ffmpeg process 16520 should have terminated with a return code of 1.
+2024-09-23 01:07:15,738:ERROR:discord.player: Calling the after function failed.
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\player.py", line 784, in _call_after
+    self.after(error)
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 90, in <lambda>
+    voice_client.play(source, after=lambda e: self.play_next(interaction.guild.id, e, interaction.channel))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Music.play_next() takes 3 positional arguments but 4 were given
+2024-09-23 01:07:15,741:INFO:discord.player: ffmpeg process 21640 successfully terminated with return code of 0.
+2024-09-23 01:11:22,077:INFO:discord.voice_state: The voice handshake is being terminated for Channel ID 1118576876928126979 (Guild ID 934311718237134879)
+2024-09-23 01:18:42,490:INFO:discord.client: logging in using static token
+2024-09-23 01:18:45,230:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 2088088ed4e83f16fa4a9a21b304f577).
+2024-09-23 01:20:30,415:INFO:discord.client: logging in using static token
+2024-09-23 01:20:32,078:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: b1cd78988ef16cb44603d33c33a2a4fc).
+2024-09-23 01:20:34,105:INFO:root: Logged in as SHADOW.#7995 (ID: 1125888676690395149)
+2024-09-23 01:20:34,105:INFO:root: ------
+2024-09-23 01:20:34,108:INFO:root: AddGame Cog has been added to the bot.
+2024-09-23 01:20:34,108:INFO:root: Loaded extension: cogs.commands.add_game
+2024-09-23 01:20:34,110:INFO:root: Loaded extension: cogs.commands.admin
+2024-09-23 01:20:34,111:INFO:root: AdminOnly Cog has been added to the bot.
+2024-09-23 01:20:34,111:INFO:root: Loaded extension: cogs.commands.admin_only
+2024-09-23 01:20:34,113:INFO:root: Echo Cog has been added to the bot.
+2024-09-23 01:20:34,113:INFO:root: Loaded extension: cogs.commands.echo
+2024-09-23 01:20:34,114:INFO:root: Greet Cog has been added to the bot.
+2024-09-23 01:20:34,114:INFO:root: Loaded extension: cogs.commands.greet
+2024-09-23 01:20:34,115:INFO:root: Loaded extension: cogs.commands.hello
+2024-09-23 01:20:34,714:INFO:root: Music Cog initialized.
+2024-09-23 01:20:34,714:INFO:root: Music Cog has been added to the bot.
+2024-09-23 01:20:34,714:INFO:root: Loaded extension: cogs.commands.music
+2024-09-23 01:20:34,716:INFO:root: OwnerOnly Cog has been added to the bot.
+2024-09-23 01:20:34,716:INFO:root: Loaded extension: cogs.commands.owner_only
+2024-09-23 01:20:34,717:INFO:root: Loaded extension: cogs.commands.ping
+2024-09-23 01:20:34,718:INFO:root: RateLimited Cog has been added to the bot.
+2024-09-23 01:20:34,718:INFO:root: Loaded extension: cogs.commands.rate_limited
+2024-09-23 01:20:34,719:INFO:root: Loaded extension: cogs.commands.rps
+2024-09-23 01:20:34,721:INFO:root: ErrorHandler Cog has been added to the bot.
+2024-09-23 01:20:34,721:INFO:root: Loaded extension: cogs.events.error_handler
+2024-09-23 01:20:34,722:INFO:root: Loaded extension: cogs.events.general_events
+2024-09-23 01:20:34,723:INFO:root: MemberEvents Cog initialized.
+2024-09-23 01:20:34,723:INFO:root: MemberEvents Cog has been added to the bot.
+2024-09-23 01:20:34,723:INFO:root: Loaded extension: cogs.events.member_events
+2024-09-23 01:20:35,186:INFO:root: Synced 9 commands.
+2024-09-23 01:23:09,503:INFO:discord.client: logging in using static token
+2024-09-23 01:23:11,332:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: edaa6193f4734a4e0d7279a52f1dfbd8).
+2024-09-23 01:23:13,442:INFO:root: Logged in as SHADOW.#7995 (ID: 1125888676690395149)
+2024-09-23 01:23:13,442:INFO:root: ------
+2024-09-23 01:23:13,444:INFO:root: AddGame Cog has been added to the bot.
+2024-09-23 01:23:13,444:INFO:root: Loaded extension: cogs.commands.add_game
+2024-09-23 01:23:13,445:INFO:root: Loaded extension: cogs.commands.admin
+2024-09-23 01:23:13,446:INFO:root: AdminOnly Cog has been added to the bot.
+2024-09-23 01:23:13,446:INFO:root: Loaded extension: cogs.commands.admin_only
+2024-09-23 01:23:13,447:INFO:root: Echo Cog has been added to the bot.
+2024-09-23 01:23:13,447:INFO:root: Loaded extension: cogs.commands.echo
+2024-09-23 01:23:13,448:INFO:root: Greet Cog has been added to the bot.
+2024-09-23 01:23:13,448:INFO:root: Loaded extension: cogs.commands.greet
+2024-09-23 01:23:13,449:INFO:root: Loaded extension: cogs.commands.hello
+2024-09-23 01:23:14,069:INFO:root: Music Cog initialized.
+2024-09-23 01:23:14,069:INFO:root: Music Cog has been added to the bot.
+2024-09-23 01:23:14,070:INFO:root: Loaded extension: cogs.commands.music
+2024-09-23 01:23:14,071:INFO:root: OwnerOnly Cog has been added to the bot.
+2024-09-23 01:23:14,072:INFO:root: Loaded extension: cogs.commands.owner_only
+2024-09-23 01:23:14,072:INFO:root: Loaded extension: cogs.commands.ping
+2024-09-23 01:23:14,073:INFO:root: RateLimited Cog has been added to the bot.
+2024-09-23 01:23:14,073:INFO:root: Loaded extension: cogs.commands.rate_limited
+2024-09-23 01:23:14,074:INFO:root: Loaded extension: cogs.commands.rps
+2024-09-23 01:23:14,076:INFO:root: ErrorHandler Cog has been added to the bot.
+2024-09-23 01:23:14,076:INFO:root: Loaded extension: cogs.events.error_handler
+2024-09-23 01:23:14,077:INFO:root: Loaded extension: cogs.events.general_events
+2024-09-23 01:23:14,077:INFO:root: MemberEvents Cog initialized.
+2024-09-23 01:23:14,078:INFO:root: MemberEvents Cog has been added to the bot.
+2024-09-23 01:23:14,078:INFO:root: Loaded extension: cogs.events.member_events
+2024-09-23 01:23:14,581:INFO:root: Synced 0 commands.
+2024-09-23 01:24:02,782:INFO:discord.client: logging in using static token
+2024-09-23 01:24:04,636:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 9b1e7fb6248777ec8055d8e618b363ad).
+2024-09-23 01:24:06,752:INFO:root: Logged in as SHADOW.#7995 (ID: 1125888676690395149)
+2024-09-23 01:24:06,752:INFO:root: ------
+2024-09-23 01:24:06,754:INFO:root: AddGame Cog has been added to the bot.
+2024-09-23 01:24:06,755:INFO:root: Loaded extension: cogs.commands.add_game
+2024-09-23 01:24:06,756:INFO:root: Loaded extension: cogs.commands.admin
+2024-09-23 01:24:06,756:INFO:root: AdminOnly Cog has been added to the bot.
+2024-09-23 01:24:06,756:INFO:root: Loaded extension: cogs.commands.admin_only
+2024-09-23 01:24:06,757:INFO:root: Echo Cog has been added to the bot.
+2024-09-23 01:24:06,758:INFO:root: Loaded extension: cogs.commands.echo
+2024-09-23 01:24:06,759:INFO:root: Greet Cog has been added to the bot.
+2024-09-23 01:24:06,759:INFO:root: Loaded extension: cogs.commands.greet
+2024-09-23 01:24:06,760:INFO:root: Loaded extension: cogs.commands.hello
+2024-09-23 01:24:07,364:INFO:root: Music Cog initialized.
+2024-09-23 01:24:07,365:INFO:root: Music Cog has been added to the bot.
+2024-09-23 01:24:07,366:INFO:root: Loaded extension: cogs.commands.music
+2024-09-23 01:24:07,367:INFO:root: OwnerOnly Cog has been added to the bot.
+2024-09-23 01:24:07,367:INFO:root: Loaded extension: cogs.commands.owner_only
+2024-09-23 01:24:07,368:INFO:root: Loaded extension: cogs.commands.ping
+2024-09-23 01:24:07,369:INFO:root: RateLimited Cog has been added to the bot.
+2024-09-23 01:24:07,369:INFO:root: Loaded extension: cogs.commands.rate_limited
+2024-09-23 01:24:07,370:INFO:root: Loaded extension: cogs.commands.rps
+2024-09-23 01:24:07,372:INFO:root: ErrorHandler Cog has been added to the bot.
+2024-09-23 01:24:07,372:INFO:root: Loaded extension: cogs.events.error_handler
+2024-09-23 01:24:07,373:INFO:root: Loaded extension: cogs.events.general_events
+2024-09-23 01:24:07,374:INFO:root: MemberEvents Cog initialized.
+2024-09-23 01:24:07,374:INFO:root: MemberEvents Cog has been added to the bot.
+2024-09-23 01:24:07,375:INFO:root: Loaded extension: cogs.events.member_events
+2024-09-23 01:24:07,746:INFO:root: Synced 0 commands.
+2024-09-23 01:26:17,659:INFO:discord.client: logging in using static token
+2024-09-23 01:26:19,596:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: e2d3ddbad227aa726eabf5c0bd088767).
+2024-09-23 01:26:21,624:INFO:root: Logged in as SHADOW.#7995 (ID: 1125888676690395149)
+2024-09-23 01:26:21,624:INFO:root: ------
+2024-09-23 01:26:21,627:INFO:root: AddGame Cog has been added to the bot.
+2024-09-23 01:26:21,627:INFO:root: Loaded extension: cogs.commands.add_game
+2024-09-23 01:26:21,628:INFO:root: Loaded extension: cogs.commands.admin
+2024-09-23 01:26:21,629:INFO:root: AdminOnly Cog has been added to the bot.
+2024-09-23 01:26:21,629:INFO:root: Loaded extension: cogs.commands.admin_only
+2024-09-23 01:26:21,630:INFO:root: Echo Cog has been added to the bot.
+2024-09-23 01:26:21,631:INFO:root: Loaded extension: cogs.commands.echo
+2024-09-23 01:26:21,632:INFO:root: Greet Cog has been added to the bot.
+2024-09-23 01:26:21,632:INFO:root: Loaded extension: cogs.commands.greet
+2024-09-23 01:26:21,633:INFO:root: Loaded extension: cogs.commands.hello
+2024-09-23 01:26:22,249:ERROR:root: Failed to load extension cogs.commands.music: Extension 'cogs.commands.music' raised an error: NameError: name 'GUILD_ID' is not defined
+2024-09-23 01:26:22,251:INFO:root: OwnerOnly Cog has been added to the bot.
+2024-09-23 01:26:22,251:INFO:root: Loaded extension: cogs.commands.owner_only
+2024-09-23 01:26:22,252:INFO:root: Loaded extension: cogs.commands.ping
+2024-09-23 01:26:22,253:INFO:root: RateLimited Cog has been added to the bot.
+2024-09-23 01:26:22,253:INFO:root: Loaded extension: cogs.commands.rate_limited
+2024-09-23 01:26:22,255:INFO:root: Loaded extension: cogs.commands.rps
+2024-09-23 01:26:22,256:INFO:root: ErrorHandler Cog has been added to the bot.
+2024-09-23 01:26:22,256:INFO:root: Loaded extension: cogs.events.error_handler
+2024-09-23 01:26:22,257:INFO:root: Loaded extension: cogs.events.general_events
+2024-09-23 01:26:22,258:INFO:root: MemberEvents Cog initialized.
+2024-09-23 01:26:22,259:INFO:root: MemberEvents Cog has been added to the bot.
+2024-09-23 01:26:22,259:INFO:root: Loaded extension: cogs.events.member_events
+2024-09-23 01:26:22,745:INFO:root: Synced 0 commands.
+2024-09-23 01:27:31,441:INFO:discord.client: logging in using static token
+2024-09-23 01:27:33,410:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 37994285a551b1a5801a295fbe2109c2).
+2024-09-23 01:27:35,634:INFO:root: Logged in as SHADOW.#7995 (ID: 1125888676690395149)
+2024-09-23 01:27:35,634:INFO:root: ------
+2024-09-23 01:27:35,637:INFO:root: AddGame Cog has been added to the bot.
+2024-09-23 01:27:35,637:INFO:root: Loaded extension: cogs.commands.add_game
+2024-09-23 01:27:35,638:INFO:root: Loaded extension: cogs.commands.admin
+2024-09-23 01:27:35,639:INFO:root: AdminOnly Cog has been added to the bot.
+2024-09-23 01:27:35,639:INFO:root: Loaded extension: cogs.commands.admin_only
+2024-09-23 01:27:35,640:INFO:root: Echo Cog has been added to the bot.
+2024-09-23 01:27:35,641:INFO:root: Loaded extension: cogs.commands.echo
+2024-09-23 01:27:35,642:INFO:root: Greet Cog has been added to the bot.
+2024-09-23 01:27:35,642:INFO:root: Loaded extension: cogs.commands.greet
+2024-09-23 01:27:35,643:INFO:root: Loaded extension: cogs.commands.hello
+2024-09-23 01:27:36,273:INFO:root: Music Cog initialized.
+2024-09-23 01:27:36,273:INFO:root: Music Cog has been added to the bot.
+2024-09-23 01:27:36,274:INFO:root: Loaded extension: cogs.commands.music
+2024-09-23 01:27:36,275:INFO:root: OwnerOnly Cog has been added to the bot.
+2024-09-23 01:27:36,275:INFO:root: Loaded extension: cogs.commands.owner_only
+2024-09-23 01:27:36,276:INFO:root: Loaded extension: cogs.commands.ping
+2024-09-23 01:27:36,277:INFO:root: RateLimited Cog has been added to the bot.
+2024-09-23 01:27:36,277:INFO:root: Loaded extension: cogs.commands.rate_limited
+2024-09-23 01:27:36,278:INFO:root: Loaded extension: cogs.commands.rps
+2024-09-23 01:27:36,280:INFO:root: ErrorHandler Cog has been added to the bot.
+2024-09-23 01:27:36,280:INFO:root: Loaded extension: cogs.events.error_handler
+2024-09-23 01:27:36,281:INFO:root: Loaded extension: cogs.events.general_events
+2024-09-23 01:27:36,282:INFO:root: MemberEvents Cog initialized.
+2024-09-23 01:27:36,282:INFO:root: MemberEvents Cog has been added to the bot.
+2024-09-23 01:27:36,283:INFO:root: Loaded extension: cogs.events.member_events
+2024-09-23 01:27:36,771:INFO:root: Synced 9 commands.
+2024-09-23 01:30:05,988:INFO:discord.client: logging in using static token
+2024-09-23 01:30:08,417:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: e81bb81d76e39a4ebc2b36718b33abe1).
+2024-09-23 01:30:10,420:INFO:root: Logged in as SHADOW.#7995 (ID: 1125888676690395149)
+2024-09-23 01:30:10,420:INFO:root: ------
+2024-09-23 01:30:10,435:INFO:root: AddGame Cog has been added to the bot.
+2024-09-23 01:30:10,435:INFO:root: Loaded extension: cogs.commands.add_game
+2024-09-23 01:30:10,441:INFO:root: Loaded extension: cogs.commands.admin
+2024-09-23 01:30:10,448:INFO:root: AdminOnly Cog has been added to the bot.
+2024-09-23 01:30:10,449:INFO:root: Loaded extension: cogs.commands.admin_only
+2024-09-23 01:30:10,455:INFO:root: Echo Cog has been added to the bot.
+2024-09-23 01:30:10,455:INFO:root: Loaded extension: cogs.commands.echo
+2024-09-23 01:30:10,462:INFO:root: Greet Cog has been added to the bot.
+2024-09-23 01:30:10,462:INFO:root: Loaded extension: cogs.commands.greet
+2024-09-23 01:30:10,469:INFO:root: Loaded extension: cogs.commands.hello
+2024-09-23 01:30:12,584:INFO:root: Music Cog initialized.
+2024-09-23 01:30:12,584:INFO:root: Music Cog has been added to the bot.
+2024-09-23 01:30:12,584:INFO:root: Loaded extension: cogs.commands.music
+2024-09-23 01:30:12,600:INFO:root: OwnerOnly Cog has been added to the bot.
+2024-09-23 01:30:12,601:INFO:root: Loaded extension: cogs.commands.owner_only
+2024-09-23 01:30:12,607:INFO:root: Loaded extension: cogs.commands.ping
+2024-09-23 01:30:12,615:INFO:root: RateLimited Cog has been added to the bot.
+2024-09-23 01:30:12,615:INFO:root: Loaded extension: cogs.commands.rate_limited
+2024-09-23 01:30:12,622:INFO:root: Loaded extension: cogs.commands.rps
+2024-09-23 01:30:12,635:INFO:root: ErrorHandler Cog has been added to the bot.
+2024-09-23 01:30:12,636:INFO:root: Loaded extension: cogs.events.error_handler
+2024-09-23 01:30:12,642:INFO:root: Loaded extension: cogs.events.general_events
+2024-09-23 01:30:12,647:INFO:root: MemberEvents Cog initialized.
+2024-09-23 01:30:12,648:INFO:root: MemberEvents Cog has been added to the bot.
+2024-09-23 01:30:12,648:INFO:root: Loaded extension: cogs.events.member_events
+2024-09-23 01:30:13,259:INFO:root: Synced 8 commands.
+2024-09-23 01:30:41,680:INFO:discord.client: logging in using static token
+2024-09-23 01:30:43,291:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 649d6c5b7e1ec2e789b35bf42fb8e9f8).
+2024-09-23 01:30:45,499:INFO:root: Logged in as SHADOW.#7995 (ID: 1125888676690395149)
+2024-09-23 01:30:45,499:INFO:root: ------
+2024-09-23 01:30:45,509:INFO:root: AddGame Cog has been added to the bot.
+2024-09-23 01:30:45,509:INFO:root: Loaded extension: cogs.commands.add_game
+2024-09-23 01:30:45,510:INFO:root: Loaded extension: cogs.commands.admin
+2024-09-23 01:30:45,511:INFO:root: AdminOnly Cog has been added to the bot.
+2024-09-23 01:30:45,512:INFO:root: Loaded extension: cogs.commands.admin_only
+2024-09-23 01:30:45,513:INFO:root: Echo Cog has been added to the bot.
+2024-09-23 01:30:45,514:INFO:root: Loaded extension: cogs.commands.echo
+2024-09-23 01:30:45,515:INFO:root: Greet Cog has been added to the bot.
+2024-09-23 01:30:45,515:INFO:root: Loaded extension: cogs.commands.greet
+2024-09-23 01:30:45,517:INFO:root: Loaded extension: cogs.commands.hello
+2024-09-23 01:30:46,123:INFO:root: Music Cog initialized.
+2024-09-23 01:30:46,123:INFO:root: Music Cog has been added to the bot.
+2024-09-23 01:30:46,124:INFO:root: Loaded extension: cogs.commands.music
+2024-09-23 01:30:46,125:INFO:root: OwnerOnly Cog has been added to the bot.
+2024-09-23 01:30:46,126:INFO:root: Loaded extension: cogs.commands.owner_only
+2024-09-23 01:30:46,126:INFO:root: Loaded extension: cogs.commands.ping
+2024-09-23 01:30:46,128:INFO:root: RateLimited Cog has been added to the bot.
+2024-09-23 01:30:46,128:INFO:root: Loaded extension: cogs.commands.rate_limited
+2024-09-23 01:30:46,129:INFO:root: Loaded extension: cogs.commands.rps
+2024-09-23 01:30:46,130:INFO:root: ErrorHandler Cog has been added to the bot.
+2024-09-23 01:30:46,130:INFO:root: Loaded extension: cogs.events.error_handler
+2024-09-23 01:30:46,131:INFO:root: Loaded extension: cogs.events.general_events
+2024-09-23 01:30:46,132:INFO:root: MemberEvents Cog initialized.
+2024-09-23 01:30:46,133:INFO:root: MemberEvents Cog has been added to the bot.
+2024-09-23 01:30:46,133:INFO:root: Loaded extension: cogs.events.member_events
+2024-09-23 01:30:46,783:INFO:root: Synced 10 commands.
+2024-09-23 01:31:09,494:INFO:discord.client: logging in using static token
+2024-09-23 01:31:11,129:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: bfbd490e5630f562368120b7b7129405).
+2024-09-23 01:31:13,146:INFO:root: Logged in as SHADOW.#7995 (ID: 1125888676690395149)
+2024-09-23 01:31:13,146:INFO:root: ------
+2024-09-23 01:31:13,153:INFO:root: AddGame Cog has been added to the bot.
+2024-09-23 01:31:13,154:INFO:root: Loaded extension: cogs.commands.add_game
+2024-09-23 01:31:13,155:INFO:root: Loaded extension: cogs.commands.admin
+2024-09-23 01:31:13,156:INFO:root: AdminOnly Cog has been added to the bot.
+2024-09-23 01:31:13,156:INFO:root: Loaded extension: cogs.commands.admin_only
+2024-09-23 01:31:13,158:INFO:root: Echo Cog has been added to the bot.
+2024-09-23 01:31:13,158:INFO:root: Loaded extension: cogs.commands.echo
+2024-09-23 01:31:13,159:INFO:root: Greet Cog has been added to the bot.
+2024-09-23 01:31:13,159:INFO:root: Loaded extension: cogs.commands.greet
+2024-09-23 01:31:13,160:INFO:root: Loaded extension: cogs.commands.hello
+2024-09-23 01:31:13,753:INFO:root: Music Cog initialized.
+2024-09-23 01:31:13,753:INFO:root: Music Cog has been added to the bot.
+2024-09-23 01:31:13,754:INFO:root: Loaded extension: cogs.commands.music
+2024-09-23 01:31:13,755:INFO:root: OwnerOnly Cog has been added to the bot.
+2024-09-23 01:31:13,756:INFO:root: Loaded extension: cogs.commands.owner_only
+2024-09-23 01:31:13,757:INFO:root: Loaded extension: cogs.commands.ping
+2024-09-23 01:31:13,757:INFO:root: RateLimited Cog has been added to the bot.
+2024-09-23 01:31:13,758:INFO:root: Loaded extension: cogs.commands.rate_limited
+2024-09-23 01:31:13,768:INFO:root: Loaded extension: cogs.commands.rps
+2024-09-23 01:31:13,770:INFO:root: ErrorHandler Cog has been added to the bot.
+2024-09-23 01:31:13,770:INFO:root: Loaded extension: cogs.events.error_handler
+2024-09-23 01:31:13,771:INFO:root: Loaded extension: cogs.events.general_events
+2024-09-23 01:31:13,772:INFO:root: MemberEvents Cog initialized.
+2024-09-23 01:31:13,772:INFO:root: MemberEvents Cog has been added to the bot.
+2024-09-23 01:31:13,772:INFO:root: Loaded extension: cogs.events.member_events
+2024-09-23 01:31:46,707:INFO:root: Synced 11 commands.
+2024-09-23 01:31:52,601:INFO:discord.client: logging in using static token
+2024-09-23 01:31:54,493:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 42dcb671f66cf4a01616b9c9088ab028).
+2024-09-23 01:31:56,535:INFO:root: Logged in as SHADOW.#7995 (ID: 1125888676690395149)
+2024-09-23 01:31:56,535:INFO:root: ------
+2024-09-23 01:31:56,537:INFO:root: AddGame Cog has been added to the bot.
+2024-09-23 01:31:56,537:INFO:root: Loaded extension: cogs.commands.add_game
+2024-09-23 01:31:56,537:INFO:root: Loaded extension: cogs.commands.admin
+2024-09-23 01:31:56,538:INFO:root: AdminOnly Cog has been added to the bot.
+2024-09-23 01:31:56,538:INFO:root: Loaded extension: cogs.commands.admin_only
+2024-09-23 01:31:56,540:INFO:root: Echo Cog has been added to the bot.
+2024-09-23 01:31:56,540:INFO:root: Loaded extension: cogs.commands.echo
+2024-09-23 01:31:56,541:INFO:root: Greet Cog has been added to the bot.
+2024-09-23 01:31:56,541:INFO:root: Loaded extension: cogs.commands.greet
+2024-09-23 01:31:56,542:INFO:root: Loaded extension: cogs.commands.hello
+2024-09-23 01:31:57,189:INFO:root: Music Cog initialized.
+2024-09-23 01:31:57,190:INFO:root: Music Cog has been added to the bot.
+2024-09-23 01:31:57,190:INFO:root: Loaded extension: cogs.commands.music
+2024-09-23 01:31:57,192:INFO:root: OwnerOnly Cog has been added to the bot.
+2024-09-23 01:31:57,192:INFO:root: Loaded extension: cogs.commands.owner_only
+2024-09-23 01:31:57,193:INFO:root: Loaded extension: cogs.commands.ping
+2024-09-23 01:31:57,193:INFO:root: RateLimited Cog has been added to the bot.
+2024-09-23 01:31:57,194:INFO:root: Loaded extension: cogs.commands.rate_limited
+2024-09-23 01:31:57,210:INFO:root: Loaded extension: cogs.commands.rps
+2024-09-23 01:31:57,212:INFO:root: ErrorHandler Cog has been added to the bot.
+2024-09-23 01:31:57,212:INFO:root: Loaded extension: cogs.events.error_handler
+2024-09-23 01:31:57,213:INFO:root: Loaded extension: cogs.events.general_events
+2024-09-23 01:31:57,215:INFO:root: MemberEvents Cog initialized.
+2024-09-23 01:31:57,215:INFO:root: MemberEvents Cog has been added to the bot.
+2024-09-23 01:31:57,215:INFO:root: Loaded extension: cogs.events.member_events
+2024-09-23 01:31:57,694:INFO:root: Synced 11 commands.
+2024-09-23 01:33:11,164:INFO:discord.client: logging in using static token
+2024-09-23 01:33:12,893:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: f64d1304982d5b8b17e8c9099532d283).
+2024-09-23 01:33:15,087:INFO:root: Logged in as SHADOW.#7995 (ID: 1125888676690395149)
+2024-09-23 01:33:15,087:INFO:root: ------
+2024-09-23 01:33:15,090:INFO:root: AddGame Cog has been added to the bot.
+2024-09-23 01:33:15,090:INFO:root: Loaded extension: cogs.commands.add_game
+2024-09-23 01:33:15,091:INFO:root: Loaded extension: cogs.commands.admin
+2024-09-23 01:33:15,092:INFO:root: AdminOnly Cog has been added to the bot.
+2024-09-23 01:33:15,093:INFO:root: Loaded extension: cogs.commands.admin_only
+2024-09-23 01:33:15,094:INFO:root: Echo Cog has been added to the bot.
+2024-09-23 01:33:15,094:INFO:root: Loaded extension: cogs.commands.echo
+2024-09-23 01:33:15,096:INFO:root: Greet Cog has been added to the bot.
+2024-09-23 01:33:15,096:INFO:root: Loaded extension: cogs.commands.greet
+2024-09-23 01:33:15,097:INFO:root: Loaded extension: cogs.commands.hello
+2024-09-23 01:33:15,721:INFO:root: Music Cog initialized.
+2024-09-23 01:33:15,722:INFO:root: Music Cog has been added to the bot.
+2024-09-23 01:33:15,722:INFO:root: Loaded extension: cogs.commands.music
+2024-09-23 01:33:15,724:INFO:root: OwnerOnly Cog has been added to the bot.
+2024-09-23 01:33:15,724:INFO:root: Loaded extension: cogs.commands.owner_only
+2024-09-23 01:33:15,732:INFO:root: Loaded extension: cogs.commands.ping
+2024-09-23 01:33:15,734:INFO:root: RateLimited Cog has been added to the bot.
+2024-09-23 01:33:15,734:INFO:root: Loaded extension: cogs.commands.rate_limited
+2024-09-23 01:33:15,740:INFO:root: Loaded extension: cogs.commands.rps
+2024-09-23 01:33:15,742:INFO:root: ErrorHandler Cog has been added to the bot.
+2024-09-23 01:33:15,742:INFO:root: Loaded extension: cogs.events.error_handler
+2024-09-23 01:33:15,743:INFO:root: Loaded extension: cogs.events.general_events
+2024-09-23 01:33:15,744:INFO:root: MemberEvents Cog initialized.
+2024-09-23 01:33:15,744:INFO:root: MemberEvents Cog has been added to the bot.
+2024-09-23 01:33:15,744:INFO:root: Loaded extension: cogs.events.member_events
+2024-09-23 01:33:16,248:INFO:root: Synced 12 commands.
+2024-09-23 01:35:23,595:INFO:discord.client: logging in using static token
+2024-09-23 01:35:25,427:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: b7f00f86565dd1f588de5fd7a1d59fd7).
+2024-09-23 01:35:27,429:INFO:root: Logged in as SHADOW.#7995 (ID: 1125888676690395149)
+2024-09-23 01:35:27,429:INFO:root: ------
+2024-09-23 01:35:27,431:INFO:root: AddGame Cog has been added to the bot.
+2024-09-23 01:35:27,432:INFO:root: Loaded extension: cogs.commands.add_game
+2024-09-23 01:35:27,433:INFO:root: Loaded extension: cogs.commands.admin
+2024-09-23 01:35:27,433:INFO:root: AdminOnly Cog has been added to the bot.
+2024-09-23 01:35:27,434:INFO:root: Loaded extension: cogs.commands.admin_only
+2024-09-23 01:35:27,444:INFO:root: Echo Cog has been added to the bot.
+2024-09-23 01:35:27,445:INFO:root: Loaded extension: cogs.commands.echo
+2024-09-23 01:35:27,446:INFO:root: Greet Cog has been added to the bot.
+2024-09-23 01:35:27,446:INFO:root: Loaded extension: cogs.commands.greet
+2024-09-23 01:35:27,447:INFO:root: Loaded extension: cogs.commands.hello
+2024-09-23 01:35:28,053:INFO:root: Music Cog initialized.
+2024-09-23 01:35:28,054:INFO:root: Music Cog has been added to the bot.
+2024-09-23 01:35:28,054:INFO:root: Loaded extension: cogs.commands.music
+2024-09-23 01:35:28,056:INFO:root: OwnerOnly Cog has been added to the bot.
+2024-09-23 01:35:28,056:INFO:root: Loaded extension: cogs.commands.owner_only
+2024-09-23 01:35:28,062:INFO:root: Loaded extension: cogs.commands.ping
+2024-09-23 01:35:28,064:INFO:root: RateLimited Cog has been added to the bot.
+2024-09-23 01:35:28,064:INFO:root: Loaded extension: cogs.commands.rate_limited
+2024-09-23 01:35:28,065:INFO:root: Loaded extension: cogs.commands.rps
+2024-09-23 01:35:28,066:INFO:root: ErrorHandler Cog has been added to the bot.
+2024-09-23 01:35:28,067:INFO:root: Loaded extension: cogs.events.error_handler
+2024-09-23 01:35:28,067:INFO:root: Loaded extension: cogs.events.general_events
+2024-09-23 01:35:28,068:INFO:root: MemberEvents Cog initialized.
+2024-09-23 01:35:28,068:INFO:root: MemberEvents Cog has been added to the bot.
+2024-09-23 01:35:28,068:INFO:root: Loaded extension: cogs.events.member_events
+2024-09-23 01:35:28,593:INFO:root: Synced 13 commands.
+2024-09-23 01:43:45,775:INFO:discord.client: logging in using static token
+2024-09-23 01:43:47,444:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: b555532870fae361d182ca1a1311f085).
+2024-09-23 01:43:49,466:INFO:root: Logged in as SHADOW.#7995 (ID: 1125888676690395149)
+2024-09-23 01:43:49,466:INFO:root: ------
+2024-09-23 01:43:49,469:INFO:root: AddGame Cog has been added to the bot.
+2024-09-23 01:43:49,469:INFO:root: Loaded extension: cogs.commands.add_game
+2024-09-23 01:43:49,470:INFO:root: Loaded extension: cogs.commands.admin
+2024-09-23 01:43:49,471:INFO:root: AdminOnly Cog has been added to the bot.
+2024-09-23 01:43:49,471:INFO:root: Loaded extension: cogs.commands.admin_only
+2024-09-23 01:43:49,478:INFO:root: Echo Cog has been added to the bot.
+2024-09-23 01:43:49,478:INFO:root: Loaded extension: cogs.commands.echo
+2024-09-23 01:43:49,480:INFO:root: Greet Cog has been added to the bot.
+2024-09-23 01:43:49,481:INFO:root: Loaded extension: cogs.commands.greet
+2024-09-23 01:43:49,482:INFO:root: Loaded extension: cogs.commands.hello
+2024-09-23 01:43:50,104:INFO:root: Music Cog initialized.
+2024-09-23 01:43:50,593:INFO:root: Music Cog has been added and commands synced to the guild.
+2024-09-23 01:43:50,594:INFO:root: Loaded extension: cogs.commands.music
+2024-09-23 01:43:50,596:INFO:root: OwnerOnly Cog has been added to the bot.
+2024-09-23 01:43:50,596:INFO:root: Loaded extension: cogs.commands.owner_only
+2024-09-23 01:43:50,597:INFO:root: Loaded extension: cogs.commands.ping
+2024-09-23 01:43:50,598:INFO:root: RateLimited Cog has been added to the bot.
+2024-09-23 01:43:50,599:INFO:root: Loaded extension: cogs.commands.rate_limited
+2024-09-23 01:43:50,600:INFO:root: Loaded extension: cogs.commands.rps
+2024-09-23 01:43:50,602:INFO:root: ErrorHandler Cog has been added to the bot.
+2024-09-23 01:43:50,602:INFO:root: Loaded extension: cogs.events.error_handler
+2024-09-23 01:43:50,604:INFO:root: Loaded extension: cogs.events.general_events
+2024-09-23 01:43:50,605:INFO:root: MemberEvents Cog initialized.
+2024-09-23 01:43:50,605:INFO:root: MemberEvents Cog has been added to the bot.
+2024-09-23 01:43:50,605:INFO:root: Loaded extension: cogs.events.member_events
+2024-09-23 01:43:51,331:INFO:root: Synced 13 commands.
+2024-09-23 01:44:39,451:INFO:discord.client: logging in using static token
+2024-09-23 01:44:41,175:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: dff5e82e0758e586f87407f36bf4dfc4).
+2024-09-23 01:44:43,225:INFO:root: Logged in as SHADOW.#7995 (ID: 1125888676690395149)
+2024-09-23 01:44:43,225:INFO:root: ------
+2024-09-23 01:44:43,227:INFO:root: AddGame Cog has been added to the bot.
+2024-09-23 01:44:43,227:INFO:root: Loaded extension: cogs.commands.add_game
+2024-09-23 01:44:43,228:INFO:root: Loaded extension: cogs.commands.admin
+2024-09-23 01:44:43,229:INFO:root: AdminOnly Cog has been added to the bot.
+2024-09-23 01:44:43,229:INFO:root: Loaded extension: cogs.commands.admin_only
+2024-09-23 01:44:43,230:INFO:root: Echo Cog has been added to the bot.
+2024-09-23 01:44:43,230:INFO:root: Loaded extension: cogs.commands.echo
+2024-09-23 01:44:43,231:INFO:root: Greet Cog has been added to the bot.
+2024-09-23 01:44:43,232:INFO:root: Loaded extension: cogs.commands.greet
+2024-09-23 01:44:43,233:INFO:root: Loaded extension: cogs.commands.hello
+2024-09-23 01:44:43,868:INFO:root: Music Cog initialized.
+2024-09-23 01:44:44,285:INFO:root: Music Cog has been added and commands synced to the guild.
+2024-09-23 01:44:44,285:INFO:root: Loaded extension: cogs.commands.music
+2024-09-23 01:44:44,287:INFO:root: OwnerOnly Cog has been added to the bot.
+2024-09-23 01:44:44,287:INFO:root: Loaded extension: cogs.commands.owner_only
+2024-09-23 01:44:44,288:INFO:root: Loaded extension: cogs.commands.ping
+2024-09-23 01:44:44,289:INFO:root: RateLimited Cog has been added to the bot.
+2024-09-23 01:44:44,289:INFO:root: Loaded extension: cogs.commands.rate_limited
+2024-09-23 01:44:44,290:INFO:root: Loaded extension: cogs.commands.rps
+2024-09-23 01:44:44,292:INFO:root: ErrorHandler Cog has been added to the bot.
+2024-09-23 01:44:44,292:INFO:root: Loaded extension: cogs.events.error_handler
+2024-09-23 01:44:44,293:INFO:root: Loaded extension: cogs.events.general_events
+2024-09-23 01:44:44,293:INFO:root: MemberEvents Cog initialized.
+2024-09-23 01:44:44,293:INFO:root: MemberEvents Cog has been added to the bot.
+2024-09-23 01:44:44,293:INFO:root: Loaded extension: cogs.events.member_events
+2024-09-23 01:44:44,788:INFO:root: Synced 13 commands.
+2024-09-23 01:45:14,142:INFO:discord.voice_state: Connecting to voice...
+2024-09-23 01:45:14,142:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2024-09-23 01:45:14,663:INFO:discord.voice_state: Voice handshake complete. Endpoint found: india10042.discord.media
+2024-09-23 01:45:14,873:INFO:discord.voice_state: Voice connection complete.
+2024-09-23 01:45:14,874:INFO:root: Connected to voice channel in guild 934311718237134879.
+2024-09-23 01:45:18,232:INFO:root: Playing Ed Sheeran - Shape of You (Official Music Video) in guild 934311718237134879.
+2024-09-23 01:48:22,080:INFO:root: No more songs in queue for guild 934311718237134879. Disconnecting.
+2024-09-23 01:48:22,081:ERROR:discord.player: Calling the after function failed.
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\player.py", line 784, in _call_after
+    self.after(error)
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 95, in <lambda>
+    voice_client.play(source, after=lambda e: self.play_next(guild_id, e))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 208, in play_next
+    loop = asyncio.get_event_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 702, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'audio-player:0x1d976b0a1e0'.
+2024-09-23 01:48:22,095:INFO:discord.player: ffmpeg process 18236 successfully terminated with return code of 0.
+2024-09-23 01:48:33,064:INFO:root: Playing Ed Sheeran - Shape of You (Official Music Video) in guild 934311718237134879.
+2024-09-23 01:48:45,143:INFO:root: Added believer to queue in guild 934311718237134879. Current queue: ['believer']
+2024-09-23 01:48:51,496:INFO:root: Displayed queue for guild 934311718237134879.
+2024-09-23 01:49:03,720:INFO:root: Paused music in guild 934311718237134879.
+2024-09-23 01:49:07,655:INFO:root: Resumed music in guild 934311718237134879.
+2024-09-23 01:49:27,277:INFO:root: Next song in queue for guild 934311718237134879: believer
+2024-09-23 01:49:27,277:ERROR:discord.player: Calling the after function failed.
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\player.py", line 784, in _call_after
+    self.after(error)
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 95, in <lambda>
+    voice_client.play(source, after=lambda e: self.play_next(guild_id, e))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 204, in play_next
+    loop = asyncio.get_event_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 702, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'audio-player:0x1d977163170'.
+2024-09-23 01:49:27,281:INFO:discord.player: ffmpeg process 24804 has not terminated. Waiting to terminate...
+2024-09-23 01:49:27,757:INFO:root: Skipped song in guild 934311718237134879.
+2024-09-23 01:49:28,174:INFO:discord.player: ffmpeg process 24804 should have terminated with a return code of 1.
+2024-09-23 01:50:28,488:INFO:discord.voice_state: The voice handshake is being terminated for Channel ID 1118576876928126979 (Guild ID 934311718237134879)
+2024-09-23 01:50:32,829:INFO:discord.client: logging in using static token
+2024-09-23 01:50:34,800:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 834634cac91655433e268380de145f2f).
+2024-09-23 01:50:36,823:INFO:root: Logged in as SHADOW.#7995 (ID: 1125888676690395149)
+2024-09-23 01:50:36,823:INFO:root: ------
+2024-09-23 01:50:36,825:INFO:root: AddGame Cog has been added to the bot.
+2024-09-23 01:50:36,826:INFO:root: Loaded extension: cogs.commands.add_game
+2024-09-23 01:50:36,827:INFO:root: Loaded extension: cogs.commands.admin
+2024-09-23 01:50:36,828:INFO:root: AdminOnly Cog has been added to the bot.
+2024-09-23 01:50:36,828:INFO:root: Loaded extension: cogs.commands.admin_only
+2024-09-23 01:50:36,829:INFO:root: Echo Cog has been added to the bot.
+2024-09-23 01:50:36,829:INFO:root: Loaded extension: cogs.commands.echo
+2024-09-23 01:50:36,839:INFO:root: Greet Cog has been added to the bot.
+2024-09-23 01:50:36,839:INFO:root: Loaded extension: cogs.commands.greet
+2024-09-23 01:50:36,849:INFO:root: Loaded extension: cogs.commands.hello
+2024-09-23 01:50:37,496:INFO:root: Music Cog initialized.
+2024-09-23 01:50:37,496:INFO:root: Music Cog has been added to the bot.
+2024-09-23 01:50:37,497:INFO:root: Loaded extension: cogs.commands.music
+2024-09-23 01:50:37,498:INFO:root: OwnerOnly Cog has been added to the bot.
+2024-09-23 01:50:37,498:INFO:root: Loaded extension: cogs.commands.owner_only
+2024-09-23 01:50:37,499:INFO:root: Loaded extension: cogs.commands.ping
+2024-09-23 01:50:37,500:INFO:root: RateLimited Cog has been added to the bot.
+2024-09-23 01:50:37,500:INFO:root: Loaded extension: cogs.commands.rate_limited
+2024-09-23 01:50:37,501:INFO:root: Loaded extension: cogs.commands.rps
+2024-09-23 01:50:37,502:INFO:root: ErrorHandler Cog has been added to the bot.
+2024-09-23 01:50:37,503:INFO:root: Loaded extension: cogs.events.error_handler
+2024-09-23 01:50:37,503:INFO:root: Loaded extension: cogs.events.general_events
+2024-09-23 01:50:37,504:INFO:root: MemberEvents Cog initialized.
+2024-09-23 01:50:37,504:INFO:root: MemberEvents Cog has been added to the bot.
+2024-09-23 01:50:37,505:INFO:root: Loaded extension: cogs.events.member_events
+2024-09-23 01:50:37,929:INFO:root: Synced 0 commands to guild 934311718237134879.
+2024-09-23 01:50:57,244:INFO:discord.voice_state: Connecting to voice...
+2024-09-23 01:50:57,244:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2024-09-23 01:50:57,785:INFO:discord.voice_state: Voice handshake complete. Endpoint found: india10042.discord.media
+2024-09-23 01:51:19,893:ERROR:root: Error in /play command: Command 'play' raised an exception: ClientException: Already connected to a voice channel.
+2024-09-23 01:51:27,247:INFO:discord.voice_state: Timed out connecting to voice
+2024-09-23 01:51:27,247:INFO:discord.voice_state: The voice handshake is being terminated for Channel ID 1118576876928126979 (Guild ID 934311718237134879)
+2024-09-23 01:51:27,275:INFO:discord.voice_state: The voice handshake is being terminated for Channel ID 1118576876928126979 (Guild ID 934311718237134879)
+2024-09-23 01:51:57,291:ERROR:root: Error in /play command: Command 'play' raised an exception: TimeoutError: 
+2024-09-23 01:51:57,726:ERROR:asyncio: Task exception was never retrieved
+future: <Task finished name='CommandTree-invoker' coro=<CommandTree._from_interaction.<locals>.wrapper() done, defined at C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\tree.py:1149> exception=NotFound('404 Not Found (error code: 10008): Unknown Message')>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\voice_state.py", line 413, in _inner_connect
+    await self._handshake_websocket()
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\voice_state.py", line 583, in _handshake_websocket
+    await self.ws.poll_event()
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\gateway.py", line 1031, in poll_event
+    await self.received_message(utils._from_json(msg.data))
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\gateway.py", line 937, in received_message
+    await self.initial_connection(data)
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\gateway.py", line 962, in initial_connection
+    state.ip, state.port = await self.discover_ip()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\gateway.py", line 989, in discover_ip
+    recv = await fut
+           ^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 78, in play
+    voice_client = await voice_channel.connect()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\abc.py", line 1966, in connect
+    await voice.connect(timeout=timeout, reconnect=reconnect, self_deaf=self_deaf, self_mute=self_mute)
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\voice_client.py", line 305, in connect
+    await self._connection.connect(
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\voice_state.py", line 380, in connect
+    await self._connector
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\voice_state.py", line 384, in _wrap_connect
+    await self._connect(*args)
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\voice_state.py", line 429, in _connect
+    await asyncio.wait_for(
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'play' raised an exception: TimeoutError: 
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\tree.py", line 1151, in wrapper
+    await self._call(interaction)
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\tree.py", line 1313, in _call
+    await command._invoke_error_handlers(interaction, e)
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 800, in _invoke_error_handlers
+    await self.on_error(self.binding, interaction, error)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 303, in play_error
+    await interaction.followup.send("❌ An unexpected error occurred while trying to play the song.", ephemeral=True)
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\webhook\async_.py", line 1843, in send
+    data = await adapter.execute_webhook(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\webhook\async_.py", line 221, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10008): Unknown Message
+2024-09-23 01:54:38,840:INFO:discord.client: logging in using static token
+2024-09-23 01:54:40,732:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 7b835c7ee312e5d1f7d1b178c47798e5).
+2024-09-23 01:54:42,743:INFO:root: Logged in as SHADOW.#7995 (ID: 1125888676690395149)
+2024-09-23 01:54:42,743:INFO:root: ------
+2024-09-23 01:54:42,745:INFO:root: AddGame Cog has been added to the bot.
+2024-09-23 01:54:42,746:INFO:root: Loaded extension: cogs.commands.add_game
+2024-09-23 01:54:42,747:INFO:root: Loaded extension: cogs.commands.admin
+2024-09-23 01:54:42,747:INFO:root: AdminOnly Cog has been added to the bot.
+2024-09-23 01:54:42,747:INFO:root: Loaded extension: cogs.commands.admin_only
+2024-09-23 01:54:42,748:INFO:root: Echo Cog has been added to the bot.
+2024-09-23 01:54:42,749:INFO:root: Loaded extension: cogs.commands.echo
+2024-09-23 01:54:42,755:INFO:root: Greet Cog has been added to the bot.
+2024-09-23 01:54:42,756:INFO:root: Loaded extension: cogs.commands.greet
+2024-09-23 01:54:42,763:INFO:root: Loaded extension: cogs.commands.hello
+2024-09-23 01:54:43,397:INFO:root: Music Cog initialized.
+2024-09-23 01:54:43,899:INFO:root: Music Cog has been added and commands synced to the guild.
+2024-09-23 01:54:43,899:INFO:root: Loaded extension: cogs.commands.music
+2024-09-23 01:54:43,902:INFO:root: OwnerOnly Cog has been added to the bot.
+2024-09-23 01:54:43,902:INFO:root: Loaded extension: cogs.commands.owner_only
+2024-09-23 01:54:43,903:INFO:root: Loaded extension: cogs.commands.ping
+2024-09-23 01:54:43,904:INFO:root: RateLimited Cog has been added to the bot.
+2024-09-23 01:54:43,905:INFO:root: Loaded extension: cogs.commands.rate_limited
+2024-09-23 01:54:43,906:INFO:root: Loaded extension: cogs.commands.rps
+2024-09-23 01:54:43,908:INFO:root: ErrorHandler Cog has been added to the bot.
+2024-09-23 01:54:43,908:INFO:root: Loaded extension: cogs.events.error_handler
+2024-09-23 01:54:43,909:INFO:root: Loaded extension: cogs.events.general_events
+2024-09-23 01:54:43,910:INFO:root: MemberEvents Cog initialized.
+2024-09-23 01:54:43,911:INFO:root: MemberEvents Cog has been added to the bot.
+2024-09-23 01:54:43,911:INFO:root: Loaded extension: cogs.events.member_events
+2024-09-23 01:55:09,721:INFO:discord.voice_state: Connecting to voice...
+2024-09-23 01:55:09,722:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2024-09-23 01:55:10,241:INFO:discord.voice_state: Voice handshake complete. Endpoint found: india10042.discord.media
+2024-09-23 01:55:10,422:INFO:discord.voice_state: Voice connection complete.
+2024-09-23 01:55:10,423:INFO:root: Connected to voice channel in guild 934311718237134879.
+2024-09-23 01:55:13,868:INFO:root: Playing Imagine Dragons - Believer (Official Music Video) in guild 934311718237134879.
+2024-09-23 01:55:43,801:INFO:root: Synced 13 commands to guild 934311718237134879.
+2024-09-23 01:56:55,549:INFO:root: Added stay to queue in guild 934311718237134879. Current queue: ['stay']
+2024-09-23 01:57:46,395:INFO:root: Next song in queue for guild 934311718237134879: stay
+2024-09-23 01:57:46,396:ERROR:discord.player: Calling the after function failed.
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\player.py", line 784, in _call_after
+    self.after(error)
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 95, in <lambda>
+    voice_client.play(source, after=lambda e: self.play_next(guild_id, e))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 204, in play_next
+    loop = asyncio.get_event_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 702, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'audio-player:0x28a24c1f290'.
+2024-09-23 01:57:46,400:INFO:discord.player: ffmpeg process 18248 successfully terminated with return code of 0.
+2024-09-23 17:21:57,266:INFO:discord.client: logging in using static token
+2024-09-23 17:21:59,133:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 83809286d18188053b0d4c80eb5516c7).
+2024-09-23 17:22:01,152:INFO:root: Logged in as SHADOW.#7995 (ID: 1125888676690395149)
+2024-09-23 17:22:01,152:INFO:root: ------
+2024-09-23 17:22:01,162:INFO:root: AddGame Cog has been added to the bot.
+2024-09-23 17:22:01,162:INFO:root: Loaded extension: cogs.commands.add_game
+2024-09-23 17:22:01,175:INFO:root: Loaded extension: cogs.commands.admin
+2024-09-23 17:22:01,182:INFO:root: AdminOnly Cog has been added to the bot.
+2024-09-23 17:22:01,183:INFO:root: Loaded extension: cogs.commands.admin_only
+2024-09-23 17:22:01,190:INFO:root: Echo Cog has been added to the bot.
+2024-09-23 17:22:01,191:INFO:root: Loaded extension: cogs.commands.echo
+2024-09-23 17:22:01,197:INFO:root: Greet Cog has been added to the bot.
+2024-09-23 17:22:01,197:INFO:root: Loaded extension: cogs.commands.greet
+2024-09-23 17:22:01,206:INFO:root: Loaded extension: cogs.commands.hello
+2024-09-23 17:22:03,340:INFO:root: Music Cog initialized.
+2024-09-23 17:22:03,781:INFO:root: Music Cog has been added and commands synced to the guild.
+2024-09-23 17:22:03,781:INFO:root: Loaded extension: cogs.commands.music
+2024-09-23 17:22:03,811:INFO:root: OwnerOnly Cog has been added to the bot.
+2024-09-23 17:22:03,812:INFO:root: Loaded extension: cogs.commands.owner_only
+2024-09-23 17:22:03,816:INFO:root: Loaded extension: cogs.commands.ping
+2024-09-23 17:22:03,824:INFO:root: RateLimited Cog has been added to the bot.
+2024-09-23 17:22:03,824:INFO:root: Loaded extension: cogs.commands.rate_limited
+2024-09-23 17:22:03,834:INFO:root: Loaded extension: cogs.commands.rps
+2024-09-23 17:22:03,848:INFO:root: ErrorHandler Cog has been added to the bot.
+2024-09-23 17:22:03,848:INFO:root: Loaded extension: cogs.events.error_handler
+2024-09-23 17:22:03,852:INFO:root: Loaded extension: cogs.events.general_events
+2024-09-23 17:22:03,859:INFO:root: MemberEvents Cog initialized.
+2024-09-23 17:22:03,859:INFO:root: MemberEvents Cog has been added to the bot.
+2024-09-23 17:22:03,859:INFO:root: Loaded extension: cogs.events.member_events
+2024-09-23 17:22:49,893:INFO:discord.voice_state: Connecting to voice...
+2024-09-23 17:22:49,894:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2024-09-23 17:22:50,428:INFO:discord.voice_state: Voice handshake complete. Endpoint found: india10011.discord.media
+2024-09-23 17:22:50,668:INFO:discord.voice_state: Voice connection complete.
+2024-09-23 17:22:50,669:INFO:root: Connected to voice channel in guild 934311718237134879.
+2024-09-23 17:22:55,861:INFO:root: Playing The Kid LAROI, Justin Bieber - STAY (Official Video) in guild 934311718237134879.
+2024-09-23 17:23:03,775:INFO:root: Synced 13 commands to guild 934311718237134879.
+2024-09-23 17:24:21,082:INFO:root: Rate-limited command used by 620830203320467467.
+2024-09-23 17:24:51,962:INFO:root: Owner command used.
+2024-09-23 17:24:55,688:INFO:root: No more songs in queue for guild 934311718237134879. Disconnecting.
+2024-09-23 17:24:55,688:ERROR:discord.player: Calling the after function failed.
+Traceback (most recent call last):
+  File "C:\Users\racha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\player.py", line 784, in _call_after
+    self.after(error)
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 95, in <lambda>
+    voice_client.play(source, after=lambda e: self.play_next(guild_id, e))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\proj\Discord-Bot\cogs\commands\music.py", line 208, in play_next
+    loop = asyncio.get_event_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1776.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 702, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'audio-player:0x1ee395804d0'.
+2024-09-23 17:24:55,703:INFO:discord.player: ffmpeg process 12896 successfully terminated with return code of 0.
+2024-09-23 17:31:01,830:INFO:discord.voice_state: The voice handshake is being terminated for Channel ID 1118576876928126979 (Guild ID 934311718237134879)
+2024-09-23 17:32:43,185:INFO:discord.client: logging in using static token
+2024-09-23 17:32:44,941:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 1d82911c16c670802f1995701f3c1c46).
+2024-09-23 17:32:47,098:INFO:root: Logged in as SHADOW.#7995 (ID: 1125888676690395149)
+2024-09-23 17:32:47,098:INFO:root: ------
+2024-09-23 17:32:47,101:INFO:root: AddGame Cog has been added to the bot.
+2024-09-23 17:32:47,101:INFO:root: Loaded extension: cogs.commands.add_game
+2024-09-23 17:32:47,103:INFO:root: Loaded extension: cogs.commands.admin
+2024-09-23 17:32:47,104:INFO:root: AdminOnly Cog has been added to the bot.
+2024-09-23 17:32:47,104:INFO:root: Loaded extension: cogs.commands.admin_only
+2024-09-23 17:32:47,105:INFO:root: Echo Cog has been added to the bot.
+2024-09-23 17:32:47,106:INFO:root: Loaded extension: cogs.commands.echo
+2024-09-23 17:32:47,106:INFO:root: Greet Cog has been added to the bot.
+2024-09-23 17:32:47,107:INFO:root: Loaded extension: cogs.commands.greet
+2024-09-23 17:32:47,107:INFO:root: Loaded extension: cogs.commands.hello
+2024-09-23 17:32:47,725:INFO:root: Music Cog initialized.
+2024-09-23 17:32:47,725:INFO:root: Music Cog has been added to the bot.
+2024-09-23 17:32:47,725:INFO:root: Loaded extension: cogs.commands.music
+2024-09-23 17:32:47,727:INFO:root: OwnerOnly Cog has been added to the bot.
+2024-09-23 17:32:47,727:INFO:root: Loaded extension: cogs.commands.owner_only
+2024-09-23 17:32:47,728:INFO:root: Loaded extension: cogs.commands.ping
+2024-09-23 17:32:47,729:INFO:root: RateLimited Cog has been added to the bot.
+2024-09-23 17:32:47,729:INFO:root: Loaded extension: cogs.commands.rate_limited
+2024-09-23 17:32:47,730:INFO:root: Loaded extension: cogs.commands.rps
+2024-09-23 17:32:47,732:INFO:root: ErrorHandler Cog has been added to the bot.
+2024-09-23 17:32:47,732:INFO:root: Loaded extension: cogs.events.error_handler
+2024-09-23 17:32:47,733:INFO:root: Loaded extension: cogs.events.general_events
+2024-09-23 17:32:47,733:INFO:root: MemberEvents Cog initialized.
+2024-09-23 17:32:47,734:INFO:root: MemberEvents Cog has been added to the bot.
+2024-09-23 17:32:47,734:INFO:root: Loaded extension: cogs.events.member_events
+2024-09-23 17:32:48,138:INFO:root: Synced 0 commands to guild 934311718237134879.
+2024-09-23 17:33:13,436:INFO:discord.voice_state: Connecting to voice...
+2024-09-23 17:33:13,436:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2024-09-23 17:33:13,989:INFO:discord.voice_state: Voice handshake complete. Endpoint found: india10011.discord.media
+2024-09-23 17:33:14,452:INFO:discord.voice_state: Voice connection complete.
+2024-09-23 17:33:14,453:INFO:root: Connected to voice channel in guild 934311718237134879.
+2024-09-23 17:33:18,745:INFO:root: Playing The Kid LAROI, Justin Bieber - STAY (Official Video) in guild 934311718237134879.
+2024-09-23 17:33:52,717:INFO:root: Added believer to queue in guild 934311718237134879. Current queue: ['believer']
+2024-09-23 17:33:59,749:INFO:root: Next song in queue for guild 934311718237134879: believer
+2024-09-23 17:33:59,750:INFO:discord.player: ffmpeg process 5192 has not terminated. Waiting to terminate...
+2024-09-23 17:34:00,346:INFO:root: Skipped song in guild 934311718237134879.
+2024-09-23 17:34:00,476:INFO:discord.player: ffmpeg process 5192 should have terminated with a return code of 1.
+2024-09-23 17:34:03,696:INFO:root: Playing Imagine Dragons - Believer (Official Music Video) in guild 934311718237134879.
+2024-09-23 17:34:45,205:INFO:root: Added Thunder to queue in guild 934311718237134879. Current queue: ['Thunder']
+2024-09-23 17:35:02,667:INFO:root: Added Enemy to queue in guild 934311718237134879. Current queue: ['Thunder', 'Enemy']
+2024-09-23 17:35:07,424:INFO:root: Displayed queue for guild 934311718237134879.
+2024-09-23 17:36:12,184:INFO:root: Paused music in guild 934311718237134879.
+2024-09-23 17:39:38,420:INFO:root: Resumed music in guild 934311718237134879.
+2024-09-23 17:40:12,445:INFO:root: Volume set to 10% in guild 934311718237134879.
+2024-09-23 17:40:32,460:INFO:root: Next song in queue for guild 934311718237134879: Thunder
+2024-09-23 17:40:32,461:INFO:discord.player: ffmpeg process 17896 successfully terminated with return code of 0.
+2024-09-23 17:40:36,512:INFO:root: Playing Imagine Dragons - Thunder in guild 934311718237134879.

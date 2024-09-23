@@ -5,15 +5,16 @@ from discord import app_commands
 from discord.ext import commands
 import random
 
-# Replace with your actual Guild ID
-GUILD_ID = 934311718237134879  # Replace with your actual Guild ID
+# import os
+
+# GUILD_ID = int(os.getenv('GUILD_ID')) # Replace with your actual Guild ID
 
 class RPS(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
         self.choices = ["rock", "paper", "scissors"]
 
-    @app_commands.guilds(GUILD_ID)
+    #@app_commands.guilds(GUILD_ID)
     @app_commands.command(
         name="rps",
         description="Let's Play Rock Paper Scissors"

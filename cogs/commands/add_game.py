@@ -10,6 +10,7 @@ class AddGame(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
 
+    
     @app_commands.command(
         name="addgame",
         description="Add a game record."

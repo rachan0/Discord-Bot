@@ -4,11 +4,9 @@ import discord
 from discord import app_commands
 from discord.ext import commands
 import logging
-
 class Greet(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
-
     @app_commands.command(
         name="greet",
         description="Greet a user."

@@ -5,13 +5,15 @@ from discord import app_commands
 from discord.ext import commands
 
 # Replace with your actual Guild ID
-GUILD_ID = 934311718237134879
+# import os
+
+# GUILD_ID = int(os.getenv('GUILD_ID'))
 
 class Ping(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
 
-    @app_commands.guilds(GUILD_ID)
+    # @app_commands.guilds(GUILD_ID)
     @app_commands.command(
         name="ping",
         description="Check the bot's latency."
